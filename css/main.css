@@ -93,6 +93,12 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*override normalise*/
+ul {
+    padding: 0;
+}
+
+
 h1, h2, h3 {
     font-family: Open Sans;
     font-weight: 300;
@@ -118,27 +124,21 @@ h1, h2, h3 {
     color: #fff;
 }
 
-.nav{
-    width: 360px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
 .nav li{
-    width: 160px;
-    background-color: #fff;
     display: inline-block;
-    padding-top: 100px;
-    padding-bottom: 40px;
-    text-align: center;
-    opacity: .95;
 }
 
-.nav li a{
+.nav li a {
+    display: block;
     color: #333;
     text-decoration: none;
     letter-spacing: 1px;
+    width: 160px;
+    padding-top: 100px;
+    padding-bottom: 40px; 
+    background-color: white;
+    opacity: .95;
+    text-align: center;
 }
 
 h1 {
