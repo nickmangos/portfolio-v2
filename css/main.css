@@ -126,6 +126,19 @@ h1, h2, h3 {
     font-size: 1.6em;
 }
 
+.experience-expand {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*Consider absolute positioning for this element, the info symbol drops away at certain clipping points*/
+.experience-expand img {
+    position: relative;
+    right: -2px;
+    top: -8px;
+}
+
+
 .nav {
     text-align: center;
     margin: 0;
