@@ -129,13 +129,13 @@ h1, h2, h3 {
 .experience-expand {
     text-decoration: none;
     color: inherit;
+    position: relative;
 }
 
-/*Consider absolute positioning for this element, the info symbol drops away at certain clipping points*/
 .experience-expand img {
-    position: relative;
-    right: -2px;
-    top: -8px;
+    position: absolute;
+    right: -16px;
+    top: 6px;
 }
 
 
