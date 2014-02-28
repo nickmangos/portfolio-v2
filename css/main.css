@@ -132,6 +132,16 @@ h1, h2, h3 {
     font-size: 1.6em;
 }
 
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.2em;
+}
+
 .firstimpression {
     background-color: grey;
     background-image: url("../img/trainbackground.jpg");
@@ -194,25 +204,12 @@ h1, h2, h3 {
 .icon-work{
     width: 60px;
     display: block;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 2em auto;
 }
 
 .icon-work img{
     width: 60px;
     height: 60px;
-}
-
-
-h1 {
-    padding: 0;
-    margin: 0;
-}
-
-h3 {
-    text-align: center;
 }
 
 
