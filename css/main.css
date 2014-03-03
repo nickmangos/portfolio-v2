@@ -98,6 +98,7 @@ ul {
     padding: 0;
 }
 
+/*border box model*/
 *, *:before, *:after {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -126,6 +127,15 @@ ul {
 .column.flow-opposite { float: right; }
 
 
+html {
+    height: 100%;
+}
+
+
+body {
+    height: 100%;
+}
+
 h1, h2, h3 {
     font-family: Open Sans;
     font-weight: 300;
@@ -146,6 +156,7 @@ h3 {
     background-color: grey;
     background-image: url("../img/trainbackground.jpg");
     width: 100%;
+    height: 100%;
     background-size: cover;
 }
 
@@ -204,9 +215,8 @@ h3 {
 .icon-work{
     width: 60px;
     display: block;
-    margin: 2em auto;
+    margin: 3em auto;
 }
-
 .icon-work img{
     width: 60px;
     height: 60px;
