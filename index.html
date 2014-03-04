@@ -15,7 +15,6 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
     </head>
     <body>
@@ -25,7 +24,7 @@
         <header class="firstimpression">
             <div class="container">
                     <a href="/" title="Return to the homepage" class="logo"><img src="img/logo.png" alt="Nick Mangos Logo" /></a>
-                    <h1 class="welcome">Welcome to the studio of Nick Mangos, <a href="#" class="experience-expand">Experience<img src="img/info.png" alt="Information symbol" /></a>&nbsp;&nbsp; Designer.</h1>
+                    <h1 class="welcome">Welcome to the studio of Nick Mangos, <a href="#openModal" class="experience-expand">Experience<img src="img/info.png" alt="Information symbol" /></a>&nbsp;&nbsp; Designer.</h1>
                     <nav>       
                       <ul class="nav">        
                         <li><a href="#work" class="nav-work">WORK</a></li> 
@@ -77,8 +76,15 @@
             </div>
             <div class="article">
                 <h4>Indistinguishable from Magic</h4>
-                <p>The promise of progress and UX designers role.</p>
+                <p>The promise of progress and role of the UX designer.</p>
             </div>
+        </div>
+    </div>
+    <div id="openModal" class="modalDialog">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>About</h2>
+            <p>I can explain!</p>
         </div>
     </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -92,22 +98,6 @@
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src='//www.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
-        <script>
-            $(function() {
-              $('a[href*=#]:not([href=#])').click(function() {
-                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                  var target = $(this.hash);
-                  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                  if (target.length) {
-                    $('html,body').animate({
-                      scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                  }
-                }
-              });
-            });
         </script>
     </body>
 </html>
