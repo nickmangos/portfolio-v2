@@ -136,13 +136,10 @@ body {
     height: 100%;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, p {
     font-family: Open Sans;
     font-weight: 300;
     font-size: 1.6em;
-}
-
-h1 {
     padding: 0;
     margin: 0;
 }
@@ -152,6 +149,18 @@ h3 {
     font-size: 1.2em;
     margin: 0;
     padding: 1em;
+}
+
+h4 {
+    font-size: 1.4em;
+    padding-bottom: .1em;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1em;
+    font-weight: 300;
+    color: grey;
 }
 
 .firstimpression {
@@ -232,6 +241,9 @@ h3 {
     background-color: #f6f6f6;
 }
 
+.article {
+    padding-bottom: 2em;
+}
 
 
 
