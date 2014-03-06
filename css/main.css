@@ -112,6 +112,7 @@ ul {
     max-width: 48rem;
     width: 90%;
 }
+
 .column {
     float: left;
     padding-left: 1rem;
@@ -193,7 +194,7 @@ p {
 }
 
 .experience-expand:hover {
-    color: #79e9f2;
+    color: #f2bf79;
 
 }
 
@@ -205,13 +206,12 @@ p {
     height: 14;
 }
 
-
 .nav {
     text-align: center;
     margin: 0;
 }
 
-.nav li{
+.nav li {
     display: inline;
 }
 
@@ -230,18 +230,18 @@ p {
     font-weight: 400;
 }
 
-
-.icon-work{
+.icon-work {
     width: 60px;
     display: block;
     margin: 3em auto;
 }
-.icon-work img{
+
+.icon-work img {
     width: 60px;
     height: 60px;
 }
 
-.work-container:last-child{
+.work-container:last-child {
     margin-bottom: 4em;
 }
 
