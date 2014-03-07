@@ -109,7 +109,6 @@ ul {
 
 .container {
     margin: 0 auto;
-    max-width: 48rem;
     width: 90%;
 }
 
@@ -170,7 +169,6 @@ p {
     width: 100%;
     min-height: 100%;
     background-size: cover;
-    max
 }
 
 
@@ -194,7 +192,7 @@ p {
 }
 
 .experience-expand:hover {
-    color: #f2bf79;
+    color: #f2798e;
 
 }
 
@@ -245,6 +243,15 @@ p {
     margin-bottom: 4em;
 }
 
+.work-info {
+    display: none !important;
+    visibility: hidden;
+}
+
+.work-info a{
+    text-decoration: none;
+}
+
 .writing {
     background-color: #f6f6f6;
 }
@@ -281,6 +288,43 @@ p {
     background: #fff;
 }
 
+@media all and (min-width: 440px) {
+    .work-container {
+        width: 100%;
+        background-color: lightgrey;
+    }
+
+    .work-container .column {
+        padding: 0;
+    }
+
+    .work-container a {
+        width: 100%;
+        margin: 0;
+        padding: 1em;
+    }
+
+    .work-container:last-child {
+        margin-bottom: 0; 
+    }
+
+    .icon-work {
+        min-height: 20em;
+    }
+
+    .superbuild {background-color: light-grey}
+    .notebook {background-color: grey}
+    .games {background-color: grey}
+    .modical {background-color: light-grey}
+    .prototypes {background-color: light-grey}
+    .illustration {background-color: grey}
+
+    .work-info {
+    display: block !important;
+    visibility: visible;
+    text-align: center;
+    }
+}
 
 
 
