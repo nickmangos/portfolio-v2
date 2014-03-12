@@ -317,17 +317,21 @@ p {
         min-height: 20em;
     }
 
-    .superbuild {background-color: light-grey}
-    .notebook {background-color: red}
-    .games {background-color: grey}
-    .modical {background-color: light-grey}
-    .prototypes {background-color: light-grey}
-    .illustration {background-color: grey}
+    .superbuild {background-color: #f27984}
+    .notebook {background-color: #f2797a}
+    .games {background-color: #f28279}
+    .modical {background-color: #f28c79}
+    .prototypes {background-color: #f29679}
+    .illustration {background-color: #f2a079}
 
     .work-info {
     display: block !important;
     visibility: visible;
     text-align: center;
+    }
+
+    .writing {
+        background-color: #fff;
     }
 }
 
