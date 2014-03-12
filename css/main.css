@@ -181,7 +181,6 @@ p {
 .welcome {
     padding-top: 160px;
     color: #fff;
-    font-size: 1.6em;
 }
 
 .experience-expand {
@@ -291,7 +290,7 @@ p {
 @media all and (min-width: 440px) {
 
     .welcome {
-    text-align: center;
+        text-align: center;
     }
 
     .work-container {
@@ -325,9 +324,9 @@ p {
     .illustration {background-color: #f2a079}
 
     .work-info {
-    display: block !important;
-    visibility: visible;
-    text-align: center;
+        display: block !important;
+        visibility: visible;
+        text-align: center;
     }
 
     .writing {
