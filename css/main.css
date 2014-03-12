@@ -172,20 +172,20 @@ p {
 }
 
 
-.logo{
+.logo {
     position: absolute;
     top: 30px;
     right: 30px;
 }
 
-.welcome{
+.welcome {
     padding-top: 160px;
     color: #fff;
     font-size: 1.6em;
 }
 
 .experience-expand {
-    text-decoration: none;
+    text-decoration: none;v
     color: inherit;
     position: relative;
     font-weight: 400;
@@ -289,6 +289,11 @@ p {
 }
 
 @media all and (min-width: 440px) {
+
+    .welcome {
+    text-align: center;
+    }
+
     .work-container {
         width: 100%;
         background-color: lightgrey;
@@ -313,7 +318,7 @@ p {
     }
 
     .superbuild {background-color: light-grey}
-    .notebook {background-color: grey}
+    .notebook {background-color: red}
     .games {background-color: grey}
     .modical {background-color: light-grey}
     .prototypes {background-color: light-grey}
