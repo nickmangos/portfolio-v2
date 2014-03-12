@@ -169,8 +169,13 @@ p {
     width: 100%;
     min-height: 100%;
     background-size: cover;
+    display: -webkit-flex;
+    display: flex;
 }
 
+.welcome-container {
+    margin: auto;
+}
 
 .logo {
     position: absolute;
@@ -179,7 +184,6 @@ p {
 }
 
 .welcome {
-    padding-top: 160px;
     color: #fff;
 }
 
