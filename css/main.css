@@ -297,6 +297,7 @@ p {
     .welcome {
         text-align: center;
         font-size: 1.8em;
+        padding-top: 60px;
     }
 
     .work-container {
