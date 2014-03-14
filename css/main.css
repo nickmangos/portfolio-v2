@@ -264,6 +264,10 @@ p {
     padding-bottom: 2em;
 }
 
+footer {
+    background-color: #f2797a;
+}
+
 .modalDialog {
     position: fixed;
     top: 0;
@@ -338,6 +342,11 @@ p {
 
     .writing {
         background-color: #fff;
+    }
+
+    .hide-on-break {
+        display: none !important;
+        visibility: hidden;
     }
 }
 
