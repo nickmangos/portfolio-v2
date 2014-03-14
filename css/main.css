@@ -258,6 +258,7 @@ p {
 
 .writing {
     background-color: #f6f6f6;
+    padding-bottom: 2em;
 }
 
 .article {
@@ -266,6 +267,8 @@ p {
 
 footer {
     background-color: #f2797a;
+    /*Temp Height in lieu of content*/
+    min-height: 16em;
 }
 
 .modalDialog {
