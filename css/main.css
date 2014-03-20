@@ -232,15 +232,11 @@ p {
     font-weight: 400;
 }
 
-.icon-work {
-    width: 60px;
-    display: block;
-    margin: 3em auto;
-}
-
-.icon-work img {
+.work img {
     width: 60px;
     height: 60px;
+    margin: 3em auto;
+    display: block;
 }
 
 .work-container:last-child {
