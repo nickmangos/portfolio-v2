@@ -263,7 +263,7 @@ p {
 }
 
 footer {
-    background-color: #f2797a;
+    background-color: #cccccc;
     /*Temp Height in lieu of content*/
     min-height: 16em;
 }
@@ -328,12 +328,12 @@ footer {
         margin-bottom: 0; 
     }
 
-    .superbuild {background-color: #f27984}
-    .notebook {background-color: #f2797a}
-    .games {background-color: #f28279}
-    .modical {background-color: #f28c79}
-    .prototypes {background-color: #f29679}
-    .illustration {background-color: #f2a079}
+    .superbuild {background-color: #f5f5f5}
+    .notebook {background-color: #ebebeb}
+    .games {background-color: #e0e0e0}
+    .modical {background-color: #d6d6d6}
+    .prototypes {background-color: #cccccc}
+    .illustration {background-color: #c2c2c2}
 
     
     .work img{
