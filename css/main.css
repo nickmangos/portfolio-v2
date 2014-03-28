@@ -308,9 +308,14 @@ footer {
         width: 100%;
         background-color: lightgrey;
     }
+    
+    .work-container .row {
+        height: 26em;
+    }
 
     .work-container .column {
-        padding: 3em 5%;
+        padding: 4em 5%;
+        height: 100%;
     }
 
     .work-container a {
