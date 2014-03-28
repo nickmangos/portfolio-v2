@@ -249,10 +249,6 @@ p {
     visibility: hidden;
 }
 
-.work-info a{
-    text-decoration: none;
-}
-
 .writing {
     background-color: #f6f6f6;
     padding-bottom: 2em;
@@ -318,12 +314,6 @@ footer {
         height: 100%;
     }
 
-    .work-container a {
-        width: 100%;
-        margin: 0;
-        padding: 1em;
-    }
-
     .work-container:last-child {
         margin-bottom: 0; 
     }
@@ -336,8 +326,26 @@ footer {
     .illustration {background-color: #c2c2c2}
 
     
-    .work img{
+    .work img {
         margin: 0 auto 2em auto;
+    }
+
+    .work p {
+        margin-bottom: 4em;
+    }
+
+    .work a {
+        border: 1px solid;
+        font-size: .6em;
+        font-weight: 400;
+        padding: 1em;
+        border-radius: 2px;
+        letter-spacing: .1em;
+        text-decoration: none;
+    }
+
+    .work a:hover {
+        color: yellow;
     }
 
     .work-info {
