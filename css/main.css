@@ -345,8 +345,8 @@ footer {
     }
 
     .work a:hover {
-        color: #ddd;
-        border-color: #ddd;
+        color: #999;
+        border-color: #999;
     }
 
     .work-info {
