@@ -260,8 +260,12 @@ p {
 
 footer {
     background-color: #cccccc;
-    /*Temp Height in lieu of content*/
-    min-height: 16em;
+    list-style: none;
+}
+
+.footer-container {
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
 }
 
 .modalDialog {
