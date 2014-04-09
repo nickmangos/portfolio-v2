@@ -15,7 +15,7 @@ button,
 input,
 select,
 textarea {
-    color: #222;
+    color: #252525;
 }
 
 body {
@@ -155,13 +155,13 @@ h4 {
     font-size: 1.4em;
     padding-bottom: .1em;
     font-weight: 400;
-    color: #626262;
+    color: #252525;
 }
 
 p {
     font-size: 1em;
     font-weight: 300;
-    color: #626262;
+    color: #252525;
 }
 
 .firstimpression {
@@ -335,22 +335,21 @@ footer {
     }
 
     .work p {
-        margin-bottom: 4em;
+        margin-bottom: 3em;
     }
 
     .work a {
-        border: 2px solid #626262;
+        color: #fff;
         font-size: .6em;
-        font-weight: 400;
+        font-weight: 300;
         padding: 1em;
-        border-radius: 2px;
         letter-spacing: .1em;
         text-decoration: none;
+        background-color: #252525;
     }
 
     .work a:hover {
-        color: #999;
-        border-color: #999;
+        background-color: #656565;
     }
 
     .work-info {
