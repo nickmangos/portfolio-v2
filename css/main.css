@@ -259,7 +259,7 @@ p {
 }
 
 footer {
-    background-color: #cccccc;
+    background-color: #8DC3F0;
     list-style: none;
 }
 
@@ -301,7 +301,6 @@ footer {
     .welcome {
         text-align: center;
         font-size: 1.8em;
-        padding-top: 60px;
     }
 
     .work-container {
@@ -335,7 +334,7 @@ footer {
     }
 
     .work p {
-        margin-bottom: 3em;
+        margin-bottom: 6em;
     }
 
     .work a {
