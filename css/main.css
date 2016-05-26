@@ -178,12 +178,6 @@ p {
     margin: auto;
 }
 
-.logo {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-}
-
 .welcome {
     padding-top: 120px;
     color: #fff;
