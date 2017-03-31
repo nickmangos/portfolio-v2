@@ -1,0 +1,89 @@
+
+
+.card {
+	position: relative;
+	margin: 0 $card-margin-mobile 16px $card-margin-mobile;
+	padding: 20px;
+	height: 60px;
+
+}
+
+.flags {
+	font-weight: $semi-bold;
+}
+
+.device {
+	width: (6 * $column-width) + (5 * $gutter-width); //Transfer to layout
+}
+
+.device img {
+	width: 100%;
+}
+
+iframe {
+	width: 354px; //Temp, will be constrained by column 
+	height: 648px;
+	border: none;
+	background-color: $background-colour;
+}
+
+//Test - Maybe make these a hero card class.
+.card__prototypes {
+	height: 120px;
+	@media (min-width: 600px) {
+    height: 210px;
+  }
+}
+//End test
+
+.card__case-studies {
+	height: 120px;
+}
+
+.card__prototypes {
+	@include linearGradient(#D5EEA5, #99FFE3);
+}
+
+.card__projects {
+	@include linearGradient(#88EDE3, #C7FFFA);
+}
+
+.card__case-studies {
+	@include linearGradient(#98F1FF, #C7DCFF);
+}
+
+.card__notebook {
+	@include linearGradient(#DCC3FE, #C4DCFE);
+}
+
+.card__recipes {
+	@include linearGradient(#FCBCB6, #FAC3F2);
+}
+
+.card__shadow {
+	display: block;
+	position: absolute;
+	margin-right: auto;
+	margin-left: auto;
+	bottom: -20px;
+	width: 100%;
+	left: 0;
+	right: 0;
+	z-index: -1;
+}
+
+.card__shadow.alpha {
+	fill: #57c19b;
+}
+.card__shadow.bravo {
+	fill: #7AC5BE;
+}
+.card__shadow.charlie {
+	fill: #5ea1d2;
+}
+.card__shadow.delta {
+	fill: #A18BE9;
+}
+.card__shadow.echo {
+	fill: #bb4fca;
+}

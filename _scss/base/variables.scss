@@ -1,0 +1,32 @@
+$font-stack: 'Montserrat', sans-serif;
+$semi-bold: 600;
+$regular: 400;
+
+$x-large: 		2em;		//32
+$large: 		1.5em;		//24
+$medium: 		1.25em;		//20
+$medium-alt: 	1.125em;	//18*
+$small: 		1em;		//16
+$x-small:		0.75em;		//12
+$x-small-alt:	0.625em;	//10*
+
+$column-width:	46px;
+$gutter-width: 	16px;
+
+
+$primary-color: #000;
+$background-colour: #EDEDED;
+
+
+$card-margin-mobile: 12px;
+$card-margin-desktop: 0;
+
+$markup-margin-mobile: 24px;
+$markup-margin-desktop: 0;
+
+
+
+@mixin linearGradient($top, $bottom){
+	background: linear-gradient(to right bottom,  $top 0%,$bottom 100%);
+}
+

@@ -1,0 +1,26 @@
+
+header {
+	margin: 12px;
+}
+
+aside {
+	margin: 0 $markup-margin-mobile;
+	margin-bottom: 32px;
+}
+
+aside:empty {
+	margin-bottom: 0;
+}
+
+.latest {
+	float: left;
+}
+
+.flags {
+	float: right;
+}
+
+
+
+
+
