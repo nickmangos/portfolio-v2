@@ -13,7 +13,7 @@
 }
 
 .device {
-	width: (6 * $column-width) + (5 * $gutter-width); //Transfer to layout
+	min-width: (6 * $column-width) + (5 * $gutter-width); //Transfer to layout
 }
 
 .device img {
@@ -85,5 +85,5 @@ iframe {
 	fill: #A18BE9;
 }
 .card__shadow.echo {
-	fill: #bb4fca;
+	fill: #a04292;
 }

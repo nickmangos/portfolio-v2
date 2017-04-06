@@ -433,7 +433,7 @@ h3 {
   font-size: 1.25em;
   font-weight: 600; }
 
-.format {
+.grid {
   display: grid; }
 
 .format--prototype h1 {
@@ -474,6 +474,9 @@ a:hover {
 .cf:after {
   clear: both; }
 
+.grid {
+  display: grid; }
+
 header {
   margin: 12px; }
 
@@ -500,7 +503,7 @@ aside:empty {
   font-weight: 600; }
 
 .device {
-  width: 356px; }
+  min-width: 356px; }
 
 .device img {
   width: 100%; }
@@ -559,4 +562,4 @@ iframe {
   fill: #A18BE9; }
 
 .card__shadow.echo {
-  fill: #bb4fca; }
+  fill: #a04292; }
