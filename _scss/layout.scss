@@ -1,26 +1,42 @@
-.grid {
-	display: grid;
+
+//Styles for non-grid support go here.
+
+@supports (display: grid) {
+	.grid {
+		display: grid;
+	}
 }
 
 header {
-	margin: 12px;
+	position: relative;
+	margin: 64px 12px 32px 12px;
 }
 
 aside {
+	position: relative;
 	margin: 0 $markup-margin-mobile;
 	margin-bottom: 32px;
 }
 
+//Removes bottom margin of there isn't any content.
 aside:empty {
 	margin-bottom: 0;
 }
 
 .latest {
-	float: left;
+	width: auto;
 }
 
 .flags {
-	float: right;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.flags__counter {
+	position: absolute;
+	right: 6px;
+	top: 12px;
 }
 
 

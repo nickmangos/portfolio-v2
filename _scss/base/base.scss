@@ -40,10 +40,6 @@ h3 {
 	font-weight: $semi-bold;
 }
 
-.grid {
-	display: grid;
-}
-
 .format--prototype {
 	h1 {
 		font-size: $medium-alt;
@@ -80,7 +76,7 @@ a {
 
 a:hover {
 	text-decoration: none;
-	color: red;
+	// color: red;
 }
 
 .cf:before,

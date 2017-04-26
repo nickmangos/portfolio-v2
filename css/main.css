@@ -433,9 +433,6 @@ h3 {
   font-size: 1.25em;
   font-weight: 600; }
 
-.grid {
-  display: grid; }
-
 .format--prototype h1 {
   font-size: 1.125em;
   font-weight: 400; }
@@ -461,8 +458,7 @@ a {
   color: #000; }
 
 a:hover {
-  text-decoration: none;
-  color: red; }
+  text-decoration: none; }
 
 .cf:before,
 .cf:after {
@@ -474,13 +470,16 @@ a:hover {
 .cf:after {
   clear: both; }
 
-.grid {
-  display: grid; }
+@supports (display: grid) {
+  .grid {
+    display: grid; } }
 
 header {
-  margin: 12px; }
+  position: relative;
+  margin: 64px 12px 32px 12px; }
 
 aside {
+  position: relative;
   margin: 0 24px;
   margin-bottom: 32px; }
 
@@ -488,10 +487,17 @@ aside:empty {
   margin-bottom: 0; }
 
 .latest {
-  float: left; }
+  width: auto; }
 
 .flags {
-  float: right; }
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.flags__counter {
+  position: absolute;
+  right: 6px;
+  top: 12px; }
 
 .card {
   position: relative;

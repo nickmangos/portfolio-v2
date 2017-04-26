@@ -26,6 +26,11 @@ $markup-margin-desktop: 0;
 
 
 
+// Breakpoints
+
+
+
+
 @mixin linearGradient($top, $bottom){
 	background: linear-gradient(to right bottom,  $top 0%,$bottom 100%);
 }
