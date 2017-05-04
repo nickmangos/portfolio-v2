@@ -402,6 +402,17 @@ template {
 [hidden] {
   display: none; }
 
+/* Usage
+
+.my-box {
+  padding: 10px;
+  
+  @include for-desktop-up {
+    padding: 20px;
+  }
+}
+
+*/
 :root {
   font-size: 16px; }
 
@@ -421,7 +432,7 @@ h1, h2, h3, h4, p {
   margin: 0; }
 
 h1 {
-  font-size: 1.125em;
+  font-size: 1.25em;
   font-weight: 400; }
 
 .card h2 {
@@ -457,8 +468,15 @@ a {
   text-decoration: none;
   color: #000; }
 
+svg {
+  fill: #000; }
+
 a:hover {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #00F;
+  fill: #00F; }
+  a:hover svg {
+    fill: #00F; }
 
 .cf:before,
 .cf:after {
@@ -472,41 +490,69 @@ a:hover {
 
 @supports (display: grid) {
   .grid {
-    display: grid; } }
+    display: grid;
+    margin: 12px;
+    grid-gap: 12px; }
+    @media (min-width: 400px) {
+      .grid {
+        display: block; } } }
 
 header {
   position: relative;
-  margin: 64px 12px 32px 12px; }
-
-aside {
-  position: relative;
-  margin: 0 24px;
-  margin-bottom: 32px; }
-
-aside:empty {
-  margin-bottom: 0; }
+  margin: 64px 0 32px 0; }
 
 .latest {
   width: auto; }
 
-.flags {
+.header__intro {
+  margin-top: 16px;
+  max-width: 400px; }
+
+.card {
+  position: relative;
+  padding: 20px;
+  height: 60px; }
+
+aside {
+  position: relative;
+  margin: 8px 12px; }
+
+aside:empty {
+  margin-bottom: 0; }
+
+.aside__new {
+  float: right;
+  margin-bottom: -4px; }
+
+@media (min-width: 400px) {
+  .aside__new--small {
+    display: none; } }
+
+.aside__new--large {
+  display: none; }
+  @media (min-width: 400px) {
+    .aside__new--large {
+      display: block; } }
+
+.aside__latest h3 {
+  padding-right: 64px; }
+
+.counter {
   position: absolute;
   right: 0;
   top: 0; }
 
-.flags__counter {
+.counter__numerator {
   position: absolute;
-  right: 6px;
-  top: 12px; }
+  right: 29px;
+  top: 0;
+  font-weight: 600;
+  text-align: right; }
 
-.card {
-  position: relative;
-  margin: 0 12px 16px 12px;
-  padding: 20px;
-  height: 60px; }
-
-.flags {
-  font-weight: 600; }
+.counter__denominator {
+  position: absolute;
+  right: 0;
+  top: 7px; }
 
 .device {
   min-width: 356px; }

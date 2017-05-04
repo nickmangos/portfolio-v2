@@ -25,7 +25,7 @@ h1, h2, h3, h4, p{
 }
 
 h1 {
-	font-size: $medium-alt;
+	font-size: $medium;
 	font-weight: $regular;
 }
 
@@ -74,11 +74,22 @@ a {
 	color: $primary-color;
 }
 
-a:hover {
-	text-decoration: none;
-	// color: red;
+svg {
+	fill: $primary-color;
+
 }
 
+a:hover{
+	text-decoration: none;
+	color: #00F;
+	fill: #00F;
+	svg {
+		fill: #00F;
+	}
+}
+
+
+//Clearfix
 .cf:before,
 .cf:after {
     content: " "; /* 1 */

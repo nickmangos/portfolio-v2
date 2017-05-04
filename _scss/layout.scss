@@ -4,41 +4,23 @@
 @supports (display: grid) {
 	.grid {
 		display: grid;
+		margin: $card-margin-mobile;
+		grid-gap: $card-margin-mobile;
+
+		@include for-phone-landscape-up {
+			
+		}
 	}
 }
 
 header {
 	position: relative;
-	margin: 64px 12px 32px 12px;
-}
-
-aside {
-	position: relative;
-	margin: 0 $markup-margin-mobile;
-	margin-bottom: 32px;
-}
-
-//Removes bottom margin of there isn't any content.
-aside:empty {
-	margin-bottom: 0;
+	margin: 64px 0 32px 0;
 }
 
 .latest {
 	width: auto;
 }
-
-.flags {
-	position: absolute;
-	right: 0;
-	top: 0;
-}
-
-.flags__counter {
-	position: absolute;
-	right: 6px;
-	top: 12px;
-}
-
 
 
 

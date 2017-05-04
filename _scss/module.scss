@@ -1,15 +1,67 @@
 
 
-.card {
-	position: relative;
-	margin: 0 $card-margin-mobile 16px $card-margin-mobile;
-	padding: 20px;
-	height: 60px;
-
+.header__intro {
+	margin-top: 16px;
+	max-width: 400px;
 }
 
-.flags {
+.card {
+	position: relative;
+	padding: 20px;
+	height: 60px;
+}
+
+aside {
+	position: relative;
+	margin: 8px $markup-margin-mobile;
+}
+
+// Removes bottom margin if there isn't any content.
+aside:empty {
+	margin-bottom: 0;
+}
+
+.aside__new {
+	float: right;
+	margin-bottom: -4px;
+}
+
+.aside__new--small {
+	@include for-phone-landscape-up {
+		display: none;
+	}
+}
+
+
+.aside__new--large {
+	display: none;
+	@include for-phone-landscape-up {
+		display: block;
+	}
+}
+
+.aside__latest h3 {
+	padding-right: 64px; // Change to Ems
+}
+
+.counter {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.counter__numerator {
+	position: absolute;
+	right: 29px;
+	top: 0;
 	font-weight: $semi-bold;
+	text-align: right;
+}
+
+.counter__denominator {
+	position: absolute;
+	right: 0;
+	top: 7px;
 }
 
 .device {

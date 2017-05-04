@@ -21,17 +21,49 @@ $background-colour: #EDEDED;
 $card-margin-mobile: 12px;
 $card-margin-desktop: 0;
 
-$markup-margin-mobile: 24px;
+$markup-margin-mobile: 12px;
 $markup-margin-desktop: 0;
 
 
+@mixin for-phone-portrait-only {
+  @media (max-width: 399px) { @content; }
+}
 
-// Breakpoints
+@mixin for-phone-landscape-up {
+  @media (min-width: 400px) { @content; }
+}
 
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
 
+/* Usage
 
+.my-box {
+  padding: 10px;
+  
+  @include for-desktop-up {
+    padding: 20px;
+  }
+}
+
+*/
 
 @mixin linearGradient($top, $bottom){
 	background: linear-gradient(to right bottom,  $top 0%,$bottom 100%);
 }
+
+
+
+
+
 
