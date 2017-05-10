@@ -1,14 +1,31 @@
+.header {
+	@include for-tablet-landscape-up {
+		grid-column: 1 / 3;
+	}
+}
 
+.header__logo {
+	@include for-tablet-portrait-up {
+		position: fixed;
+		left: 24px;
+	}
+}
 
 .header__intro {
 	margin-top: 16px;
-	max-width: 400px;
+	max-width: 440px;
+	@include for-tablet-portrait-up {
+		margin-top: -5px; // Aligns text with logo
+	}
 }
 
 .card {
 	position: relative;
 	padding: 20px;
 	height: 60px;
+	@include for-phone-landscape-up {
+		grid-row: 1 / 3;
+	}
 }
 
 aside {
@@ -24,6 +41,12 @@ aside:empty {
 .aside__new {
 	float: right;
 	margin-bottom: -4px;
+	@include for-phone-landscape-up {
+		grid-row: 1 / 3;
+		margin-bottom: 0;
+		margin-left: -7px;
+		float: left;
+	}
 }
 
 .aside__new--small {
@@ -31,7 +54,6 @@ aside:empty {
 		display: none;
 	}
 }
-
 
 .aside__new--large {
 	display: none;
@@ -81,9 +103,9 @@ iframe {
 
 //Test - Maybe make these a hero card class.
 .card__prototypes {
-	height: 120px;
-	@media (min-width: 600px) {
-    height: 210px;
+	min-height: 120px;
+	@include for-phone-landscape-up {
+    height: 100%;
   }
 }
 //End test
@@ -137,5 +159,5 @@ iframe {
 	fill: #A18BE9;
 }
 .card__shadow.echo {
-	fill: #a04292;
+	fill: #a06a99;
 }

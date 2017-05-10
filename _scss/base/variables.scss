@@ -28,11 +28,9 @@ $markup-margin-desktop: 0;
 @mixin for-phone-portrait-only {
   @media (max-width: 399px) { @content; }
 }
-
 @mixin for-phone-landscape-up {
   @media (min-width: 400px) { @content; }
 }
-
 @mixin for-tablet-portrait-up {
   @media (min-width: 600px) { @content; }
 }
@@ -62,6 +60,9 @@ $markup-margin-desktop: 0;
 	background: linear-gradient(to right bottom,  $top 0%,$bottom 100%);
 }
 
+@mixin linearGradient--alt($top, $bottom){
+	background: linear-gradient(to right bottom,  $top 0%,$bottom 100%);
+}
 
 
 
