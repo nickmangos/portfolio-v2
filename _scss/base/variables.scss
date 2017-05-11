@@ -24,6 +24,8 @@ $card-margin-desktop: 0;
 $markup-margin-mobile: 12px;
 $markup-margin-desktop: 0;
 
+$device-colour: #FFE5D0;
+
 
 @mixin for-phone-portrait-only {
   @media (max-width: 399px) { @content; }

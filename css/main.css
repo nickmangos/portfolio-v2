@@ -509,7 +509,7 @@ a:hover {
     grid-gap: 0; }
     @media (min-width: 400px) {
       .grid__section {
-        grid-template-columns: minmax(auto, 360px) 240px;
+        grid-template-columns: minmax(auto, 400px) 240px;
         grid-template-rows: auto auto; } } }
 
 header {
@@ -591,10 +591,22 @@ aside:empty {
   top: 7px; }
 
 .device {
-  min-width: 356px; }
+  width: 352px; }
 
-.device img {
-  width: 100%; }
+.device__phone {
+  width: 352px;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.device__colour {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1; }
+
+.device__colour path {
+  fill: #FFE5D0; }
 
 iframe {
   width: 354px;
@@ -615,7 +627,8 @@ iframe {
   background: linear-gradient(to right bottom, #D5EEA5 0%, #99FFE3 100%); }
 
 .card__projects {
-  background: linear-gradient(to right bottom, #88EDE3 0%, #C7FFFA 100%); }
+  background: linear-gradient(to right bottom, #88EDE3 0%, #C7FFFA 100%);
+  height: 100%; }
 
 .card__case-studies {
   background: linear-gradient(to right bottom, #98F1FF 0%, #C7DCFF 100%); }

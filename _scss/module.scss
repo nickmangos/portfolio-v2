@@ -87,11 +87,25 @@ aside:empty {
 }
 
 .device {
-	min-width: (6 * $column-width) + (5 * $gutter-width); //Transfer to layout
+	width: 352px;
 }
 
-.device img {
-	width: 100%;
+.device__phone {
+	width: 352px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.device__colour {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+
+.device__colour path {
+	fill: #FFE5D0;
 }
 
 iframe {
@@ -120,6 +134,7 @@ iframe {
 
 .card__projects {
 	@include linearGradient(#88EDE3, #C7FFFA);
+	height: 100%;
 }
 
 .card__case-studies {
