@@ -628,7 +628,17 @@ aside:empty {
   z-index: 0; }
 
 .device__colour path {
-  fill: #e4d0ff; }
+  fill: #FFE5D0;
+  -webkit-animation: pulse 5s infinite;
+          animation: pulse 5s infinite; }
+
+@-webkit-keyframes pulse {
+  50% {
+    fill: #e4d0ff; } }
+
+@keyframes pulse {
+  50% {
+    fill: #e4d0ff; } }
 
 .card__prototypes {
   min-height: 120px; }

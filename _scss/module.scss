@@ -130,9 +130,17 @@ aside:empty {
 }
 
 .device__colour path {
-	fill: #e4d0ff;
+	fill: $device-colour;
+	animation: pulse 5s infinite;
 	//FFE5D0
 }
+
+@keyframes pulse {
+  50% {
+    fill: #e4d0ff;
+  }
+}
+
 
 //Test - Maybe make these a hero card class.
 .card__prototypes {
