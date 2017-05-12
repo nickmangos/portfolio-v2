@@ -87,7 +87,20 @@ aside:empty {
 }
 
 .device {
+	position: relative;
 	width: 352px;
+	height: 689px;
+}
+
+.device__prototype {
+	position: absolute;
+	width: 76.56%;
+	height: 69.5%;
+	top: 15.2%;
+	left: 11.9%;
+	border: none;
+	background-color: $background-colour;
+	z-index: 1;
 }
 
 .device__phone {
@@ -95,26 +108,19 @@ aside:empty {
 	position: absolute;
 	left: 0;
 	top: 0;
+	z-index: 1;
 }
 
 .device__colour {
 	position: absolute;
 	left: 0;
 	top: 0;
-	z-index: -1;
+	z-index: 0;
 }
 
 .device__colour path {
 	fill: #e4d0ff;
-}
-
-//FFE5D0
-
-iframe {
-	width: 354px; //Temp, will be constrained by column 
-	height: 648px;
-	border: none;
-	background-color: $background-colour;
+	//FFE5D0
 }
 
 //Test - Maybe make these a hero card class.

@@ -591,28 +591,35 @@ aside:empty {
   top: 7px; }
 
 .device {
-  width: 352px; }
+  position: relative;
+  width: 352px;
+  height: 689px; }
+
+.device__prototype {
+  position: absolute;
+  width: 76.56%;
+  height: 69.5%;
+  top: 15.2%;
+  left: 11.9%;
+  border: none;
+  background-color: #EDEDED;
+  z-index: 1; }
 
 .device__phone {
   width: 352px;
   position: absolute;
   left: 0;
-  top: 0; }
+  top: 0;
+  z-index: 1; }
 
 .device__colour {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: -1; }
+  z-index: 0; }
 
 .device__colour path {
-  fill: #FFE5D0; }
-
-iframe {
-  width: 354px;
-  height: 648px;
-  border: none;
-  background-color: #EDEDED; }
+  fill: #e4d0ff; }
 
 .card__prototypes {
   min-height: 120px; }
