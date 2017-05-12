@@ -501,7 +501,7 @@ a:hover {
         margin-left: 105px; } }
     @media (min-width: 900px) {
       .grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: minmax(1fr, auto) minmax(1fr, auto);
         grid-auto-flow: row dense; } }
   .grid__section {
     display: grid;
@@ -509,7 +509,7 @@ a:hover {
     grid-gap: 0; }
     @media (min-width: 400px) {
       .grid__section {
-        grid-template-columns: minmax(auto, 400px) 240px;
+        grid-template-columns: minmax(auto, 360px) 240px;
         grid-template-rows: auto auto; } } }
 
 header {
