@@ -603,6 +603,7 @@ aside:empty {
   left: 11.9%;
   border: none;
   background-color: #EDEDED;
+  overflow: none;
   z-index: 1; }
 
 .device__phone {
