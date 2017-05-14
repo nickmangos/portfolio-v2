@@ -24,7 +24,13 @@ $card-margin-desktop: 0;
 $markup-margin-mobile: 12px;
 $markup-margin-desktop: 0;
 
-$device-colour: #FFE5D0;
+$device-colour: #DAE7f3;
+
+/* 
+
+	Gold		#FFE5D0 
+	Greyblue	#DAE7f3
+*/
 
 
 @mixin for-phone-portrait-only {

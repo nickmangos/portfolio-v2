@@ -402,6 +402,11 @@ template {
 [hidden] {
   display: none; }
 
+/* 
+
+	Gold		#FFE5D0 
+	Greyblue	#DAE7f3
+*/
 /* Usage
 
 .my-box {
@@ -608,10 +613,10 @@ aside:empty {
   -webkit-overflow-scrolling: touch;
   overflow: auto;
   position: absolute;
-  width: 76.57%;
+  width: 76.7%;
   height: 69.6%;
   top: 15.2%;
-  left: 11.9%;
+  left: 11.85%;
   z-index: 2; }
 
 .device__phone {
@@ -628,17 +633,15 @@ aside:empty {
   z-index: 0; }
 
 .device__colour path {
-  fill: #FFE5D0;
-  -webkit-animation: pulse 5s infinite;
-          animation: pulse 5s infinite; }
+  fill: #DAE7f3; }
 
 @-webkit-keyframes pulse {
   50% {
-    fill: #e4d0ff; } }
+    fill: #E4D0FF; } }
 
 @keyframes pulse {
   50% {
-    fill: #e4d0ff; } }
+    fill: #E4D0FF; } }
 
 .card__prototypes {
   min-height: 120px; }
@@ -677,16 +680,16 @@ aside:empty {
   z-index: -1; }
 
 .card__shadow.alpha {
-  fill: #57c19b; }
+  fill: #57C19b; }
 
 .card__shadow.bravo {
   fill: #7AC5BE; }
 
 .card__shadow.charlie {
-  fill: #5ea1d2; }
+  fill: #5EA1D2; }
 
 .card__shadow.delta {
   fill: #A18BE9; }
 
 .card__shadow.echo {
-  fill: #a06a99; }
+  fill: #A06A99; }
