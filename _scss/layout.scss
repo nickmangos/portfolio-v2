@@ -10,12 +10,11 @@
 			grid-row-gap: 16px; // Create a variable / Maybe make this consistant at all sizes and change the magin behavior on the aside elements.
 		}
 		@include for-tablet-portrait-up {
-				margin-left: 105px;
-				grid-template-rows: auto max-content auto
+			margin-left: 105px;
 		}
 		@include for-tablet-landscape-up {
-				grid-template-columns: minmax(1fr, auto) minmax(1fr, auto);
-				grid-auto-flow: row dense;
+			grid-template-columns: minmax(1fr, auto) minmax(1fr, auto);
+			grid-auto-flow: row dense;
 		}
 
 	}
@@ -35,25 +34,21 @@
 		margin: $card-margin-mobile;
 		grid-gap: $card-margin-mobile;
 		@include for-phone-landscape-up {
-
+			margin-left: 40px;
 		}
 		@include for-tablet-portrait-up {
 			grid-template-columns: minmax(auto, 220px) 352px;
+			grid-template-rows: max-content max-content 1fr;
 		}
 		@include for-tablet-portrait-alt-up {
-			grid-template-columns: minmax(auto, 220px) 352px minmax(auto, 220px);
+			grid-template-columns: minmax(1fr, 220px) 352px minmax(1fr, 220px);
 			
 		}
 		@include for-tablet-landscape-up {
-				margin-top: 180px;
-				margin-left: 105px;
+			margin-top: 180px;
+			margin-left: 105px;
 		}
 	}
-
-
-
-
-
 }
 
 header {

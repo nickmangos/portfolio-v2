@@ -5,9 +5,9 @@
 
 /*border box model*/
 *, *:before, *:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body{
@@ -46,6 +46,7 @@ h3 {
 		font-weight: $semi-bold;
 		margin-bottom: 8px;
 		max-width: 180px;
+		letter-spacing: 0.06em;
 	}
 
 	h2 {
@@ -60,6 +61,9 @@ h3 {
 		font-weight: $light;
 		font-style: normal;
 		margin-bottom: 32px;
+		@include for-tablet-portrait-up {
+			margin-bottom: 22px;
+		}
 	}
 
 
@@ -71,6 +75,7 @@ h3 {
 		font-weight: $semi-bold;
 		font-style: normal;
 		margin-bottom: 8px;
+		letter-spacing: 0.06em;
 	}
 
 	.info__tags {
@@ -127,5 +132,5 @@ a:hover{
 }
 
 .cf:after {
-    clear: both;
+	clear: both;
 }
