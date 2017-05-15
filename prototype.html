@@ -1,65 +1,54 @@
 ---
 layout: default
-title: Prototypes
+title: Colour Transition
 ---
 
 <body class="grid format--prototype">
-	<a class="header__logo" href="index.html">
+	<a class="header__logo--prototype" href="index.html">
 		<svg width="31" height="24" viewBox="0 0 31 24">
 			<path fill-rule="evenodd" d="M123.282345,174.401303 L123.282345,151.6 L117.875179,151.6 L117.875179,165.671661 L107.354007,151.6 L102.24,151.6 L102.24,174.401303 L107.679739,174.401303 L107.679739,160.362215 L118.168339,174.401303 L123.282345,174.401303 Z M129.503844,169.22215 C127.907752,169.22215 126.800261,170.329642 126.800261,171.925733 C126.800261,173.554397 127.907752,174.661889 129.503844,174.661889 C131.099935,174.661889 132.24,173.554397 132.24,171.925733 C132.24,170.329642 131.099935,169.22215 129.503844,169.22215 Z" transform="translate(-102 -151)"/>
 		</svg>
 	</a>
 
-	<div class="info">
+	<div class="info info--first">
 		<p class="info__number">01</p>
-		<h1>Colour Transition</h1>
-		<p>Description</p>
-		<p>Instructions</p>
+		<h1>COLOUR TRANSITION</h1>
+		<p>
+			A framer module that transitions the background colour of a layer.<br><br>
+			Made obsolete by the inclusion of colour.mix.
+		</p>
+		<h2>Instructions</h2>
+		<p>Use buttons to transition the background colour.</p>
 	</div>
 	<div class="device">
 		<img class="device__phone" src="img/phoneTransparent.png">
 		<svg class="device__colour" width="372" height="699" viewBox="0 0 372 699"><!--Orig 352 689-->
 			<defs>
-			<path id="phonecolour-b" d="M86.4830597,661 L279.064602,661 C322.257915,661 331.560009,630.488703 331.560009,608.551666 L331.560009,75.4466789 C331.560009,45.9893952 316.404366,23 277.298105,23 C210.216441,23 143.143569,23 76.0619035,23 C37.5767188,23 21.7999992,45.9947828 21.7999992,75.4466789 C21.7999992,253.153595 21.7999992,430.860511 21.7999992,608.567427 C21.7999992,637.882493 36.8243456,660.651512 73.5464592,660.996037 C73.5520713,660.203947 76.4458765,659.562217 80.0147575,659.562217 C83.5871045,659.562217 86.4830639,660.205194 86.4830639,660.998346 C86.4830639,660.998897 86.4830625,660.999449 86.4830597,661 Z"/>
-			<filter id="phonecolour-a" width="135.5%" height="117.2%" x="-17.8%" y="-6%" filterUnits="objectBoundingBox">
-				<feOffset dx="2" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"/>
-				<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="12"/><!--Blur-->
-				<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.12 0"/><!--Alpha-->
-			</filter>
-		</defs>
-		<g fill="none" fill-rule="evenodd">
-			<use fill="#000" filter="url(#phonecolour-a)" xlink:href="#phonecolour-b"/>
-			<use fill="#FFE5D0" xlink:href="#phonecolour-b"/>
-		</g>
+				<path id="phonecolour-b" d="M86.4830597,661 L279.064602,661 C322.257915,661 331.560009,630.488703 331.560009,608.551666 L331.560009,75.4466789 C331.560009,45.9893952 316.404366,23 277.298105,23 C210.216441,23 143.143569,23 76.0619035,23 C37.5767188,23 21.7999992,45.9947828 21.7999992,75.4466789 C21.7999992,253.153595 21.7999992,430.860511 21.7999992,608.567427 C21.7999992,637.882493 36.8243456,660.651512 73.5464592,660.996037 C73.5520713,660.203947 76.4458765,659.562217 80.0147575,659.562217 C83.5871045,659.562217 86.4830639,660.205194 86.4830639,660.998346 C86.4830639,660.998897 86.4830625,660.999449 86.4830597,661 Z"/>
+				<filter id="phonecolour-a" width="135.5%" height="117.2%" x="-17.8%" y="-6%" filterUnits="objectBoundingBox">
+					<feOffset dx="2" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"/>
+					<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="12"/><!--Blur-->
+					<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.12 0"/><!--Alpha-->
+				</filter>
+			</defs>
+			<g fill="none" fill-rule="evenodd">
+				<use fill="#000" filter="url(#phonecolour-a)" xlink:href="#phonecolour-b"/>
+				<use fill="#FFE5D0" xlink:href="#phonecolour-b"/>
+			</g>
 		</svg>
-<!--
-		<defs>
-			<path id="phonecolour-b" d="M86.4830597,661 L279.064602,661 C322.257915,661 331.560009,630.488703 331.560009,608.551666 L331.560009,75.4466789 C331.560009,45.9893952 316.404366,23 277.298105,23 C210.216441,23 143.143569,23 76.0619035,23 C37.5767188,23 21.7999992,45.9947828 21.7999992,75.4466789 C21.7999992,253.153595 21.7999992,430.860511 21.7999992,608.567427 C21.7999992,637.882493 36.8243456,660.651512 73.5464592,660.996037 C73.5520713,660.203947 76.4458765,659.562217 80.0147575,659.562217 C83.5871045,659.562217 86.4830639,660.205194 86.4830639,660.998346 C86.4830639,660.998897 86.4830625,660.999449 86.4830597,661 Z"/>
-			<filter id="phonecolour-a" width="135.5%" height="117.2%" x="-17.8%" y="-6%" filterUnits="objectBoundingBox">
-				<feOffset dy="17" in="SourceAlpha" result="shadowOffsetOuter1"/>
-				<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="15.5"/>
-				<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.17 0"/>
-			</filter>
-		</defs>
-		<g fill="none" fill-rule="evenodd">
-			<use fill="#000" filter="url(#phonecolour-a)" xlink:href="#phonecolour-b"/>
-			<use fill="#FFE5D0" xlink:href="#phonecolour-b"/>
-		</g>
--->
-
 		<div class="device__wrapper">
 			<iframe class="device__prototype" src="https://framer.cloud/UmFMW/">
-			<!-- https://share.framerjs.com/kqoo6z41mzd2/ -->
+				<!-- https://share.framerjs.com/kqoo6z41mzd2/ -->
 				<p>Copy should give link to external content. Your browser does not support iframes.</p>
 			</iframe>
 		</div>
 	</div>
-	<div>
-		<p>Citations</p>
-		<p>Inspiration</p>
-		<p>Tags</p>
-		<p>Framer</p>
-		<p>Github</p>
+	<div class="info info--second">
+		<h2>Tags</h2>
+		<ul class="info__tags">
+			<li>MODULE</li><li>COLOUR</li>
+		</ul>
+		<a class="button">GITHUB</a>
 	</div>
 
 	<!--
@@ -68,5 +57,5 @@ title: Prototypes
 	</iframe>
 
 	http://share.framerjs.com/l0ber5edlzef/
-	-->
+-->
 </body>

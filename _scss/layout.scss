@@ -28,6 +28,26 @@
 			grid-template-rows: auto auto;
 		}
 	}
+
+	.grid.format--prototype {
+		margin: $card-margin-mobile;
+		grid-gap: $card-margin-mobile;
+		@include for-phone-landscape-up {
+			grid-row-gap: 16px; // Create a variable / Maybe make this consistant at all sizes and change the magin behavior on the aside elements.
+		}
+		@include for-tablet-portrait-up {
+			
+		}
+
+		@include for-tablet-landscape-up {
+				margin-left: 105px;
+		}
+	}
+
+
+
+
+
 }
 
 header {

@@ -11,6 +11,14 @@
 	}
 }
 
+.header__logo--prototype {
+	margin-top: 100px;
+	@include for-tablet-landscape-up {
+		position: fixed;
+		left: 24px;
+	}
+}
+
 .header__intro {
 	margin-top: 16px;
 	max-width: 440px;
@@ -86,6 +94,12 @@ aside:empty {
 	top: 7px;
 }
 
+/* Prototype */
+
+.info__number {
+		margin-top: 40px;
+	}
+
 .device {
 	position: relative;
 	width: 352px;
@@ -115,7 +129,7 @@ aside:empty {
 }
 
 .device__phone {
-	width: 352px;
+	width: 100%;
 	position: absolute;
 	left: 0;
 	top: 0;
