@@ -17,6 +17,7 @@ $gutter-width: 	16px;
 
 $primary-color: #000;
 $background-colour: #EDEDED;
+$hover-colour: #888;
 
 
 $card-margin-mobile: 12px;
@@ -73,7 +74,7 @@ $device-colour: #DAE7f3;
 }
 
 @mixin linearGradient--alt($top, $bottom){
-	background: linear-gradient(to right bottom,  $top 0%,$bottom 100%);
+	background: linear-gradient(to right top,  $top 0%,$bottom 100%);
 }
 
 

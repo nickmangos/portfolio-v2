@@ -27,6 +27,10 @@ h1, h2, h3, h4, p {
 h1 {
 	font-size: $medium;
 	font-weight: $regular;
+	@include for-tablet-portrait-up {
+		font-size: $large;
+	}
+
 }
 
 .card h2 {
@@ -116,10 +120,10 @@ svg {
 
 a:hover{
 	text-decoration: none;
-	color: #777;
-	fill: #777;
+	color: $hover-colour;
+	fill: $hover-colour;
 	svg {
-		fill: #777;
+		fill: $hover-colour;
 	}
 }
 

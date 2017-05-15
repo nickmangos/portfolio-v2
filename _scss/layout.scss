@@ -41,7 +41,7 @@
 			grid-template-rows: max-content max-content 1fr;
 		}
 		@include for-tablet-portrait-alt-up {
-			grid-template-columns: minmax(1fr, 220px) 352px minmax(1fr, 220px);
+			grid-template-columns: minmax(auto, 220px) 352px minmax(auto, 220px);
 			
 		}
 		@include for-tablet-landscape-up {

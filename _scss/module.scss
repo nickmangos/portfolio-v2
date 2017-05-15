@@ -23,7 +23,7 @@
 		position: fixed;
 		margin: 0;
 		left: 24px;
-		top: 140px;
+		top: 112px;
 	}
 	
 }
@@ -222,7 +222,7 @@ aside:empty {
 //End test
 
 .card__case-studies {
-	height: 120px;
+	height: 100px;
 }
 
 .card__prototypes {
@@ -244,6 +244,30 @@ aside:empty {
 
 .card__recipes {
 	@include linearGradient(#FCBCB6, #FAC3F2);
+}
+
+
+@include for-tablet-landscape-up {
+	.card__prototypes {
+		@include linearGradient--alt(#EDE088, #D5EEA5);
+	}
+
+	.card__projects {
+		@include linearGradient(#D5EEA5, #20DEFF);
+		height: 100%;
+	}
+
+	.card__case-studies {
+		@include linearGradient(#ECE088, #FECBC3);
+	}
+
+	.card__notebook {
+		@include linearGradient--alt(#FEC3D7, #9FC9FD);
+	}
+
+	.card__recipes {
+		@include linearGradient(#FCBCB6, #FAC3F2);
+	}
 }
 
 .card__shadow {
@@ -273,3 +297,5 @@ aside:empty {
 .card__shadow.echo {
 	fill: #A06A99;
 }
+
+
