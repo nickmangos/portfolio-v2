@@ -11,6 +11,7 @@
 		}
 		@include for-tablet-portrait-up {
 				margin-left: 105px;
+				grid-template-rows: auto max-content auto
 		}
 		@include for-tablet-landscape-up {
 				grid-template-columns: minmax(1fr, auto) minmax(1fr, auto);
@@ -29,17 +30,22 @@
 		}
 	}
 
-	.grid.format--prototype {
+	.grid--prototype {
+		display: grid;
 		margin: $card-margin-mobile;
 		grid-gap: $card-margin-mobile;
 		@include for-phone-landscape-up {
-			grid-row-gap: 16px; // Create a variable / Maybe make this consistant at all sizes and change the magin behavior on the aside elements.
+
 		}
 		@include for-tablet-portrait-up {
+			grid-template-columns: minmax(auto, 220px) 352px;
+		}
+		@include for-tablet-portrait-alt-up {
+			grid-template-columns: minmax(auto, 220px) 352px minmax(auto, 220px);
 			
 		}
-
 		@include for-tablet-landscape-up {
+				margin-top: 180px;
 				margin-left: 105px;
 		}
 	}
