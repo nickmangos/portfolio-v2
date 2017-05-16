@@ -24,7 +24,7 @@
 		margin: 0;
 		grid-gap: 0;
 		@include for-phone-landscape-up {
-			grid-template-columns: minmax(auto, 360px) 240px;
+			grid-template-columns: minmax(auto, 360px) 260px;
 			grid-template-rows: auto auto;
 		}
 	}
@@ -42,6 +42,7 @@
 		}
 		@include for-tablet-portrait-alt-up {
 			grid-template-columns: minmax(auto, 220px) 352px minmax(auto, 220px);
+			grid-template-rows: auto auto;
 			
 		}
 		@include for-tablet-landscape-up {

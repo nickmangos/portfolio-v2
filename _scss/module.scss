@@ -117,10 +117,10 @@ aside:empty {
 
 .info--second {
 	align-self: end;
-	margin-bottom: 100px;
+	margin: -10px 0 102px 0;
 	@include for-tablet-portrait-up {
 		align-self: start;
-		margin-top: 0;
+		//margin-top: 0;
 	}
 	@include for-tablet-portrait-alt-up {
 		align-self: end;
@@ -139,6 +139,28 @@ aside:empty {
 		margin-top: 0;
 	}
 }
+
+.info__button {
+
+}
+
+.button {
+	display: inline-block;
+	position: relative;
+	border: 2px solid $primary-color;
+	font-size: $x-small;
+	font-weight: $semi-bold;
+	letter-spacing: 0.08em;
+	padding: 16px 0px 16px 20px;
+	width: 100%;
+	max-width: 160px;
+}
+
+.button svg {
+		position: absolute;
+		top: 12px;
+		right: 20px;
+	}
 
 .device {
 	display: none;
@@ -246,30 +268,6 @@ aside:empty {
 	@include linearGradient(#FCBCB6, #FAC3F2);
 }
 
-
-@include for-tablet-landscape-up {
-	.card__prototypes {
-		@include linearGradient--alt(#EDE088, #D5EEA5);
-	}
-
-	.card__projects {
-		@include linearGradient(#D5EEA5, #20DEFF);
-		height: 100%;
-	}
-
-	.card__case-studies {
-		@include linearGradient(#ECE088, #FECBC3);
-	}
-
-	.card__notebook {
-		@include linearGradient--alt(#FEC3D7, #9FC9FD);
-	}
-
-	.card__recipes {
-		@include linearGradient(#FCBCB6, #FAC3F2);
-	}
-}
-
 .card__shadow {
 	display: block;
 	position: absolute;
@@ -297,5 +295,47 @@ aside:empty {
 .card__shadow.echo {
 	fill: #A06A99;
 }
+
+@include for-tablet-landscape-up {
+	.card__prototypes {
+		@include linearGradient--alt(#EDE088, #D5EEA5);
+	}
+
+	.card__projects {
+		@include linearGradient(#D5EEA5, #20DEFF);
+		height: 100%;
+	}
+
+	.card__case-studies {
+		@include linearGradient(#ECE088, #FECBC3);
+	}
+
+	.card__notebook {
+		@include linearGradient--alt(#FEC3D7, #9FC9FD);
+	}
+
+	.card__recipes {
+		@include linearGradient(#FCBCB6, #FAC3F2);
+	}
+
+	.card__shadow.alpha {
+	fill: #57C19b;
+	}
+	.card__shadow.bravo {
+		fill: #7AC5BE;
+	}
+	.card__shadow.charlie {
+		fill: #5EA1D2;
+	}
+	.card__shadow.delta {
+		fill: #A18BE9;
+	}
+	.card__shadow.echo {
+		fill: #A06A99;
+	}
+}
+
+
+
 
 

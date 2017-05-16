@@ -66,7 +66,7 @@ h3 {
 		font-style: normal;
 		margin-bottom: 32px;
 		@include for-tablet-portrait-up {
-			margin-bottom: 22px;
+			margin-bottom: 32px;
 		}
 	}
 
@@ -85,6 +85,7 @@ h3 {
 	.info__tags {
 		list-style: none;
 		padding: 0;
+		margin: 0 0 22px 0;
 		li {
 			display: inline-block;
 			border: 1px solid $primary-color;
