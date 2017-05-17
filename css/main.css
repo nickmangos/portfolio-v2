@@ -634,7 +634,8 @@ header {
   -webkit-transform: rotateY(10deg);
           transform: rotateY(10deg);
   transition: .2s;
-  z-index: 1; }
+  z-index: 1;
+  cursor: pointer; }
   .card__wrapper:hover svg {
     opacity: .6;
     -webkit-transform: skewY(-2deg);
@@ -869,12 +870,12 @@ aside:empty {
   .card__recipes {
     background: linear-gradient(to right bottom, #FCBCB6 0%, #FAC3F2 100%); }
   .card__shadow.alpha {
-    fill: #57C19b; }
+    fill: #C6C77B; }
   .card__shadow.bravo {
-    fill: #7AC5BE; }
+    fill: #36C0C9; }
   .card__shadow.charlie {
-    fill: #5EA1D2; }
+    fill: #DDB199; }
   .card__shadow.delta {
-    fill: #A18BE9; }
+    fill: #B3A9D2; }
   .card__shadow.echo {
-    fill: #A06A99; } }
+    fill: #DAA3C6; } }
