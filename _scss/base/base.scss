@@ -123,8 +123,14 @@ a:hover{
 	text-decoration: none;
 	color: $hover-colour;
 	fill: $hover-colour;
+	border-color: $hover-colour;
+	transition: 0.2s;
 	svg {
 		fill: $hover-colour;
+		path {
+			fill: $hover-colour;
+			transition: 0.2s;
+		}
 	}
 }
 

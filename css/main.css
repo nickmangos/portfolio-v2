@@ -403,7 +403,6 @@ template {
   display: none; }
 
 /* 
-
 	Gold		#FFE5D0 
 	Greyblue	#DAE7f3
 */
@@ -513,10 +512,15 @@ svg {
 
 a:hover {
   text-decoration: none;
-  color: #888;
-  fill: #888; }
+  color: #646;
+  fill: #646;
+  border-color: #646;
+  transition: 0.2s; }
   a:hover svg {
-    fill: #888; }
+    fill: #646; }
+    a:hover svg path {
+      fill: #646;
+      transition: 0.2s; }
 
 .cf:before,
 .cf:after {
@@ -568,7 +572,7 @@ a:hover {
         grid-template-rows: auto auto; } }
     @media (min-width: 900px) {
       .grid--prototype {
-        margin-top: 180px;
+        margin-top: 80px;
         margin-left: 105px; } } }
 
 header {
@@ -609,13 +613,33 @@ header {
     .header__intro {
       margin-top: -5px; } }
 
+.grid__section {
+  -webkit-perspective: 1600px;
+          perspective: 1600px; }
+
 .card {
   position: relative;
   padding: 20px;
   height: 60px; }
+
+.card__wrapper {
+  transition: all .2s ease-out; }
   @media (min-width: 400px) {
-    .card {
+    .card__wrapper {
       grid-row: 1 / 3; } }
+  .card__wrapper svg {
+    transition: all .2s ease-out; }
+
+.card__wrapper:hover {
+  -webkit-transform: rotateY(10deg);
+          transform: rotateY(10deg);
+  transition: .2s;
+  z-index: 1; }
+  .card__wrapper:hover svg {
+    opacity: .6;
+    -webkit-transform: skewY(-2deg);
+            transform: skewY(-2deg);
+    transition: all .2s ease-out; }
 
 aside {
   position: relative;
@@ -708,6 +732,9 @@ aside:empty {
   padding: 16px 0px 16px 20px;
   width: 100%;
   max-width: 160px; }
+
+.button:hover {
+  cursor: pointer; }
 
 .button svg {
   position: absolute;
@@ -812,7 +839,7 @@ aside:empty {
   width: 100%;
   left: 0;
   right: 0;
-  z-index: -1; }
+  z-index: -5; }
 
 .card__shadow.alpha {
   fill: #57C19b; }
