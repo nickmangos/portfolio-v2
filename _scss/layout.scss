@@ -2,7 +2,7 @@
 //Styles for non-grid support go here.
 
 @supports (display: grid) {
-	.grid {
+	.grid--main {
 		display: grid;
 		margin: $card-margin-mobile;
 		grid-gap: $card-margin-mobile;
@@ -13,7 +13,7 @@
 			margin-left: 105px;
 		}
 		@include for-tablet-landscape-up {
-			grid-template-columns: minmax(1fr, auto) minmax(1fr, auto);
+			grid-template-columns: minmax(50%, auto) minmax(50%, auto);
 			grid-auto-flow: row dense;
 		}
 
@@ -27,6 +27,28 @@
 			grid-template-columns: minmax(auto, 360px) 260px;
 			grid-template-rows: auto auto;
 		}
+	}
+
+	// Temp - Refactor
+	.grid--list {
+		display: grid;
+		margin: $card-margin-mobile;
+		grid-gap: 32px;
+		@include for-phone-landscape-up {
+		}
+		@include for-tablet-portrait-up {
+			margin-left: 105px;
+			margin-right: 32px;
+			margin-bottom: 64px;
+		}
+		@include for-tablet-landscape-up {
+			grid-template-columns: 320px 320px;
+			grid-auto-flow: row dense;
+		}
+		@include for-desktop-up {
+			grid-template-columns: 320px 320px 320px;
+		}
+
 	}
 
 	.grid--prototype {
@@ -46,8 +68,22 @@
 			
 		}
 		@include for-tablet-landscape-up {
-			margin-top: 80px;
+			margin-top: 54px;
 			margin-left: 105px;
+		}
+	}
+
+	.grid--project {
+		display: grid;
+		margin: $card-margin-mobile;
+		grid-gap: $card-margin-mobile;
+		@include for-phone-landscape-up {
+			// margin-left: 40px;
+		}
+		@include for-tablet-portrait-up {
+			margin-left: 105px;
+			margin-right: 32px;
+			margin-bottom: 64px;
 		}
 	}
 }
