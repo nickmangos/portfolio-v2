@@ -8,12 +8,9 @@
 }
 
 .header--list {
-	@include for-tablet-landscape-up {
-		grid-column: 1 / 3;
-	}
-	@include for-desktop-up {
-		grid-column: 1 / 4;
-	}
+	
+	grid-column: 1 / -1;
+	
 }
 
 .header__logo {
@@ -309,7 +306,7 @@ aside:empty {
 	.info__tags {
 		float: left;
 		margin-top: 16px;
-		max-width: 240px;
+		max-width: 280px;
 	}
 
 	.button {
