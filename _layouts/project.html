@@ -10,7 +10,7 @@ layout: default
 			</svg>
 		</a>
 		<h1>{{ page.title | remove_first: 'Project - '}}</h1>
-		<p class = "header__intro">{{ page.description }}</p>
+		<p class = "header__intro">{{ page.description }}.</p>
 		<div class = "header__wrapper cf">
 			<ul class = "info__tags">
 				{% for item in page.tags %}<li>{{ item | upcase }}</li>{% endfor %}

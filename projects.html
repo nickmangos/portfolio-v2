@@ -12,34 +12,12 @@ title: Projects
 		</a>
 		<h1 class="header__intro">Projects</h1>
 	</header>
-	<a class="list-item" href="/projects/trailblazer.html">
-		<img src="/projects/img/trailblazer.png">
-		<h2>Trailblazer</h2>
-		<p>A Chrome Extension that records and maps your online research</p>
-	</a>
-	<a class="list-item" href="/projects/leapingtiger.html">
-		<img src="/projects/img/leapingtiger.png">
-		<h2>Leaping Tiger Landing Page</h2>
-		<p>Landing Page for Leaping Tiger, an app that connects gamers</p>
-	</a>
-	<a class="list-item" href="/projects/nightwavepanic.html">
-		<img src="/projects/img/nightwavepanic.png">
-		<h2>Night Wave Panic</h2>
-		<p>UI, Logo and Game assets for a 48 hour game</p>
-	</a>
-	<a class="list-item" href="/projects/trailblazerbranding.html">
-		<img src="/projects/img/trailblazerbranding.png">
-		<h2>Trailblazer Brand Exploration</h2>
-		<p>Branding exercise for Trailblazer</p>
-	</a>
-	<a class="list-item" href="/projects/savethedate.html">
-		<img src="/projects/img/savethedate.png">
-		<h2>Save the Date</h2>
-		<p>Print design for wedding stationary</p>
-	</a>
-	<a class="list-item" href="/projects/illustration.html">
-		<img src="/projects/img/illustration.png">
-		<h2>Illustration</h2>
-		<p>Various Illustrations</p>
-	</a>
+	{% assign projects = site.projects | sort: 'date' | reverse %}
+	{% for project in projects %}
+		<a class="list-item" href="{{ project.url }}">
+			<img src="{{ project.cover-image }}">
+			<h2>{{ project.title | remove_first: 'Project - '}}</h2>
+			<p>{{ project.description }}</p>
+		</a>
+	{% endfor %}
 </body>
