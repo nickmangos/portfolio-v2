@@ -15,8 +15,11 @@ layout: default
 			<ul class = "info__tags">
 				{% for item in page.tags %}<li>{{ item | upcase }}</li>{% endfor %}
 			</ul>
-			<a href="{{ page.website }}" class="button">VISIT SITE</a>
+			{% if page.website != null %}
+				<a href="{{ page.website }}" class="button">VISIT SITE</a>
+			{% endif %}
 		</div>
 	</header>
 	<img class="hero" src="{{ page.hero-image }}">
+	{{ content }}
 </body>
