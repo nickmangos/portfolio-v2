@@ -267,6 +267,7 @@ aside:empty {
 	max-width: 100%;
 	opacity: 1;
 	transition: .2s;
+	height: 270px;
 }
 
 .list-item img:hover{
@@ -276,7 +277,7 @@ aside:empty {
 
 
 .format--project {
-	max-width: 640px;
+	
 
 	header {
 		margin-bottom: 0px; // Temp

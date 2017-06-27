@@ -67,6 +67,7 @@
 	}
 
 	.grid--project {
+		max-width: 800px;
 		display: grid;
 		margin: $card-margin-mobile;
 		grid-gap: $card-margin-mobile;
