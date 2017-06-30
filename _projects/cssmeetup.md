@@ -8,5 +8,5 @@ tags:
   - logo
   - colour
 cover-image: projects/cssmeetup/cover.png
-hero-image: 
+hero-image: cssmeetup/hero.png
 ---

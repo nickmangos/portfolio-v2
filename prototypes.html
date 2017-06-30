@@ -12,9 +12,12 @@ title: Prototypes
 		</a>
 		<h1 class="header__intro">Prototypes</h1>
 	</header>
-	<a class="list-item" href="/prototypes/colourtransition.html">
-		<img src="/prototypes/img/colourtransition.png">
-		<h2>Colour Transition</h2>
-		<p>Fades between two RGBA values</p>
-	</a>
+	{% assign prototypes = site.prototypes | sort: 'number' | reverse %}
+	{% for prototype in prototypes %}
+		<a class="list-item" href="{{ prototype.url }}">
+			<img src="{{ prototype.cover-image }}">
+			<h2>{{ prototype.title | remove_first: 'Prototype - '}}</h2>
+			<p>{{ prototype.description }}</p>
+		</a>
+	{% endfor %}
 </body>

@@ -4,3 +4,17 @@ exclude: ["node_modules", "gulpfile.js", "package.json"]
 collections:
   projects:
     output: true
+  prototypes:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+       device:
+        colour: '#FFE5D0'
+        img: '/img/phoneTransparent.png'
+
+
+

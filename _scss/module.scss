@@ -256,6 +256,7 @@ aside:empty {
 	position: relative;
 	display: block;
 	max-width: 420px;
+	margin-bottom: 16px;
 	@include for-phone-landscape-up {
 	}
 	@include for-tablet-portrait-up {
@@ -267,7 +268,6 @@ aside:empty {
 	max-width: 100%;
 	opacity: 1;
 	transition: .2s;
-	height: 270px;
 }
 
 .list-item img:hover{
@@ -331,15 +331,9 @@ aside:empty {
 
 		@include for-phone-portrait-only {
 			position: relative;
-			max-width: -moz-calc(100% + 24px);
-			/* WebKit */
-			max-width: -webkit-calc(100% + 24px);
-			/* Opera */
-			height: -o-calc(100% + 24px);
-			/* Standard */
-			max-width: calc(100% + 24px);
-			right: -12px;
+			max-width: 100vw;
 			left: -12px;
+			overflow: hidden;
 		}
 	}
 }
@@ -410,7 +404,7 @@ aside:empty {
 	position: absolute;
 	width: 105.68%;
 	height: 101.45%;
-	left: 0;
+	right: 0;
 	top: 0;
 	z-index: 0;
 }
@@ -419,6 +413,8 @@ aside:empty {
 	fill: $device-colour;
 	// animation: pulse 5s infinite;
 }
+
+
 
 @keyframes pulse {
 	50% {

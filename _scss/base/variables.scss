@@ -69,11 +69,11 @@ $device-colour: #DAE7f3;
 */
 
 @mixin linearGradient($top, $bottom){
-	background: linear-gradient(to right bottom,  $top 0%,$bottom 100%);
+	background: linear-gradient(to right bottom, $top 0%, $bottom 100%);
 }
 
 @mixin linearGradient--alt($top, $bottom){
-	background: linear-gradient(to right top,  $top 0%,$bottom 100%);
+	background: linear-gradient(to right top, $top 0%, $bottom 100%);
 }
 
 
