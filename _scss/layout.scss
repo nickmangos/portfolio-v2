@@ -52,12 +52,14 @@
 			margin-left: 40px;
 		}
 		@include for-tablet-portrait-up {
-			grid-template-columns: minmax(auto, 220px) 352px;
+			grid-template-columns: 1fr 352px;
 			grid-template-rows: max-content max-content 1fr;
+			margin-right: 40px;
 		}
 		@include for-tablet-portrait-alt-up {
-			grid-template-columns: minmax(auto, 220px) 352px minmax(auto, 220px);
+			grid-template-columns: 1fr 352px 1fr;
 			grid-template-rows: auto auto;
+			max-width: 840px;
 			
 		}
 		@include for-tablet-landscape-up {

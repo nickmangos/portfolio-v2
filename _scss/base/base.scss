@@ -3,6 +3,12 @@
 	font-size: 16px;
 }
 
+html {
+	min-height: 100%;
+	min-width: 100%;
+	background-color: $background-colour;
+}
+
 /*border box model*/
 *, *:before, *:after {
 	-moz-box-sizing: border-box;
@@ -16,7 +22,6 @@ body{
 	color: $primary-color;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
-	background-color: $background-colour;
 	max-width: 1200px;
 }
 
