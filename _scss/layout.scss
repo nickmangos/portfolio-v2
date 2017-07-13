@@ -16,7 +16,6 @@
 			grid-template-columns: minmax(50%, auto) minmax(50%, auto);
 			grid-auto-flow: row dense;
 		}
-
 	}
 
 	.grid__section {
@@ -29,7 +28,6 @@
 		}
 	}
 
-	// Temp - Refactor
 	.grid--list {
 		display: grid;
 		margin: $card-margin-mobile;
