@@ -11,11 +11,23 @@
 	<style media="screen" type="text/css">
 		html {
 			background: {{ page.background.colour }};
-			background: linear-gradient(to {{ page.background.gradient.direction }},  {{ page.background.gradient.alpha }} 0%, {{ page.background.gradient.bravo }} 100%);
+			background: linear-gradient(to {{ page.background.gradient.direction }}, {% for item in page.background.gradient.colours %}{% if forloop.rindex <= 1 %}{{ item }}{% else %}{{ item }}, {% endif %}{% endfor %});
 		}
 		.device__colour path {
 			fill: {{ page.device.colour }};
 		}
+		h1, h2, li, p, p.info__number--large, .info__tags li, .button {
+			color: {{ page.text-colour }};
+			border-color: {{ page.text-colour }};
+		}
+		.header__logo--prototype path, a path{
+			fill: {{ page.text-colour }};
+		}
+
+		.device__phone {
+			mix-blend-mode: {{ page.device.blend-mode }};
+		}
+
 	</style>
 </head>
 {{ content }}

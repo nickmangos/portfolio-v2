@@ -15,6 +15,3 @@ defaults:
        device:
         colour: '#FFE5D0'
         img: '/img/phoneTransparent.png'
-
-
-

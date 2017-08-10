@@ -11,10 +11,7 @@
 		}
 		@include for-tablet-portrait-up {
 			margin-left: 105px;
-		}
-		@include for-tablet-landscape-up {
-			grid-template-columns: minmax(50%, auto) minmax(50%, auto);
-			grid-auto-flow: row dense;
+			margin-right: 64px;
 		}
 	}
 

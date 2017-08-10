@@ -1,13 +1,11 @@
 .header {
-	@include for-tablet-landscape-up {
+	@include for-desktop-up {
 		grid-column: 1 / 3;
 	}
 }
 
 .header--list {
-	
-	grid-column: 1 / -1;
-	
+	grid-column: 1 / -1;	
 }
 
 .header__logo {
@@ -77,14 +75,11 @@
 	}
 }
 
-// Temp
-
-
 aside {
 	position: relative;
 	margin: 8px $markup-margin-mobile;
 	@include for-phone-portrait-only {
-		display: none;
+		display: none; //Temp, hides info on mobile.
 	}
 }
 
@@ -213,7 +208,6 @@ aside:empty {
 	cursor: pointer;
 }
 
-
 .button svg {
 	position: absolute;
 	top: 12px;
@@ -264,7 +258,6 @@ aside:empty {
 	opacity: 0.92;
 	transition: .2s;
 }
-
 
 .format--project {
 	
@@ -404,14 +397,11 @@ aside:empty {
 	// animation: pulse 5s infinite;
 }
 
-
-
 @keyframes pulse {
 	50% {
 		fill: #E4D0FF;
 	}
 }
-
 
 //Test - Maybe make these a hero card class.
 .card__prototypes {
@@ -421,8 +411,6 @@ aside:empty {
 	}
 }
 //End test
-
-
 
 
 .card__case-studies {
@@ -478,7 +466,7 @@ aside:empty {
 	fill: #A06A99;
 }
 
-@include for-tablet-landscape-up {
+@include for-desktop-up {
 	.card__prototypes {
 		@include linearGradient--alt(#EDE088, #D5EEA5);
 	}
@@ -516,10 +504,6 @@ aside:empty {
 		fill: #DAA3C6;
 	}
 }
-
-//  html {
-//		@include linearGradient--alt(#B6AAC9, #E1DEE9);
-//	}
 
 
 

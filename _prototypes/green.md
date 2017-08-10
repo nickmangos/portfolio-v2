@@ -1,8 +1,8 @@
 ---
 layout: prototype
-number: 100
-title: Prototype - Super Mario Run
-description: Tap to make Mario jump
+number: 2
+title: Prototype - Green
+description: Test
 tags:
 - super
 - mario
@@ -16,17 +16,20 @@ custom-css: true
 background:
   colour:
   gradient:
-    alpha: '#FD2832'
-    bravo: '#FF4E63'
+    colours: 
+      - '#66ffb5 0%'
+      - '#b5ffdb 100%'
     direction: right top
-text-colour:
+text-colour: '#000000'
 device:
-  colour:
+  colour: '#86ffc2'
   shadow:
-  img: '/img/phoneRed.png'
+  img:
+  blend-mode: multiply
 elements:
   layout:
   colour:
+  svg:
 ---
 
 A framer module that transitions the RGBA colour of a layer.

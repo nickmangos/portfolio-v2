@@ -94,9 +94,9 @@ a {
 	transition: .2s;
 }
 
-svg {
+.button__icon {
 	fill: $primary-color;
-
+	transition: 0.2s;
 }
 
 a:hover{
