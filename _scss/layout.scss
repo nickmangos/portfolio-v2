@@ -67,7 +67,7 @@
 		max-width: 800px;
 		display: grid;
 		margin: $card-margin-mobile;
-		grid-gap: $card-margin-mobile;
+		grid-gap: 0;
 		@include for-phone-landscape-up {
 			// margin-left: 40px;
 		}

@@ -260,8 +260,6 @@ aside:empty {
 }
 
 .format--project {
-	
-
 	header {
 		margin-bottom: 0px; // Temp
 	}
@@ -305,19 +303,24 @@ aside:empty {
 			max-width: 100%;
 			position: relative;
 			margin-top: 16px;
+			padding: 16px 0px 16px 0px;
 		}
 	}
 
 	.hero {
 		margin: 64px 0 0 0;
 		max-width: 100%;
+	}
 
-		@include for-phone-portrait-only {
-			position: relative;
-			max-width: 100vw;
-			left: -12px;
-			overflow: hidden;
-		}
+	.image {
+		margin: 16px 0 0 0;
+		max-width: 100%;
+		vertical-align: top; // Removes white space reserved for descenders at base of image.
+	}
+
+	figure {
+		padding: 0;
+		margin: 0;
 	}
 }
 

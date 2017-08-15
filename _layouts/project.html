@@ -16,10 +16,9 @@ layout: default
 				{% for item in page.tags %}<li>{{ item | upcase }}</li>{% endfor %}
 			</ul>
 			{% if page.website != null %}
-				<a href="{{ page.website }}" class="button">VISIT SITE</a>
+			<a href="{{ page.website }}" class="button">VISIT SITE</a>
 			{% endif %}
 		</div>
 	</header>
-	<img class="hero" src="{{ page.hero-image }}">
 	{{ content }}
 </body>

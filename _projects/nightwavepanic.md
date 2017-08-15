@@ -9,7 +9,13 @@ tags:
   - ui
   - video game
   - 3d
+file-name: nightwavepanic
 cover-image: projects/nightwavepanic/cover.png
-hero-image: nightwavepanic/hero.png
 ---
+<figure><img class="hero" src="/projects/{{page.file-name}}/hero.png" alt="Game interface elements" /></figure>
 
+Test test, please ignore.
+
+<figure><img class="image" src="/projects/{{page.file-name}}/1.png" alt="Game logo and design elements" /></figure>
+<figure><img class="image" src="/projects/{{page.file-name}}/2.jpg" alt="In-game screenshot"/></figure>
+<figure><img class="image" src="/projects/{{page.file-name}}/3.jpg" alt="Title screenshot"/></figure>

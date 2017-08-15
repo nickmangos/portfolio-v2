@@ -577,7 +577,7 @@ a:hover {
     max-width: 800px;
     display: grid;
     margin: 12px;
-    grid-gap: 12px; }
+    grid-gap: 0; }
     @media (min-width: 600px) {
       .grid--project {
         margin-left: 105px;
@@ -846,17 +846,21 @@ aside:empty {
     .format--project .button {
       max-width: 100%;
       position: relative;
-      margin-top: 16px; } }
+      margin-top: 16px;
+      padding: 16px 0px 16px 0px; } }
 
 .format--project .hero {
   margin: 64px 0 0 0;
   max-width: 100%; }
-  @media (max-width: 399px) {
-    .format--project .hero {
-      position: relative;
-      max-width: 100vw;
-      left: -12px;
-      overflow: hidden; } }
+
+.format--project .image {
+  margin: 16px 0 0 0;
+  max-width: 100%;
+  vertical-align: top; }
+
+.format--project figure {
+  padding: 0;
+  margin: 0; }
 
 .format--prototype .info__number--large {
   font-weight: 600; }
