@@ -1,4 +1,5 @@
 ---
+permalink: green/
 layout: prototype
 number: 2
 title: Prototype - Green
