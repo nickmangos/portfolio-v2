@@ -34,3 +34,6 @@ elements:
 A framer module that transitions the RGBA colour of a layer.
 
 Made obsolete by the inclusion of colour.mix.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTQ0NDg5NjYzOF19
+-->
