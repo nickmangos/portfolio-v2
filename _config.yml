@@ -1,5 +1,5 @@
 name: Nick Mangos
-markdown: redcarpet
+markdown: kramdown
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 collections:
   projects:
