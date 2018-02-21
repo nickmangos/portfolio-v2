@@ -1,5 +1,6 @@
 name: Nick Mangos
 markdown: kramdown
+permalink: pretty
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 collections:
   projects:
