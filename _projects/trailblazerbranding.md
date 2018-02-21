@@ -9,7 +9,7 @@ tags:
   - branding
   - colour
 file-name: trailblazerbranding
-cover-image: projects/trailblazerbranding/cover.png
+cover-image: trailblazerbranding/cover.png
 ---
 <figure><img class="hero" src="/projects/{{page.file-name}}/hero.png" alt="Trailblazer logo" /></figure>
 <figure><img class="image" src="/projects/{{page.file-name}}/1.png" alt="Trailblazer logo on image" /></figure>

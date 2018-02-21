@@ -10,7 +10,7 @@ tags:
   - research
   - ux
   - ui
-cover-image: projects/trailblazer/cover.png
+cover-image: trailblazer/cover.png
 hero-image: trailblazer/hero.png
 ---
 

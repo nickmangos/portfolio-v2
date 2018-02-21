@@ -8,6 +8,6 @@ tags:
   - logo
   - colour
 file-name: cssmeetup
-cover-image: projects/cssmeetup/cover.png
+cover-image: cssmeetup/cover.png
 ---
 <figure><img class="hero" src="/projects/{{page.file-name}}/hero.png" alt="CSS Meetup Logo" /></figure>

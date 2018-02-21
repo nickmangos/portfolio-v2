@@ -7,7 +7,7 @@ website: null
 tags:
   - print
   - design
-cover-image: projects/savethedate/cover.png
+cover-image: savethedate/cover.png
 hero-image: savethedate/hero.png
 ---
 

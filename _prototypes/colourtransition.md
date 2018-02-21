@@ -7,7 +7,7 @@ tags:
 - module
 - colour
 - rgba
-cover-image: prototypes/colourtransition/cover.png
+cover-image: colourtransition/cover.png
 framer: https://framer.cloud/UmFMW/
 github: https://github.com/nickmangos/framer-colour-transition
 instructions: Use buttons to transition the background colour.

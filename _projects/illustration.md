@@ -6,7 +6,7 @@ description: Various Illustrations
 website: null
 tags:
   - illustration
-cover-image: projects/illustration/cover.png
+cover-image: illustration/cover.png
 hero-image: null
 ---
 
