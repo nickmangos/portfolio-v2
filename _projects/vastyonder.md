@@ -2,7 +2,7 @@
 layout: project
 date: 31/7/2018
 title: Project - Vast Yonder Website
-description: Website showcasing projects 
+description: Portfolio website for Vast Yonder, an experiential agency.
 website: https://www.vastyonder.com
 tags:
   - design
