@@ -10,8 +10,16 @@ tags:
   - research
   - ux
   - ui
+
+file-name: trailblazer
 cover-image: trailblazer/cover.png
 hero-image: trailblazer/hero.png
 ---
 
-This is a test
+<figure><img class="hero" src="/projects/{{page.file-name}}/hero.png" alt="!" /></figure>
+
+<figure><img class="image" src="/projects/{{page.file-name}}/5.png" alt="!" /></figure>
+
+<figure><img class="image" src="/projects/{{page.file-name}}/4.png" alt="!" /></figure>
+
+<figure><img class="image" src="/projects/{{page.file-name}}/3.png" alt="!" /></figure>

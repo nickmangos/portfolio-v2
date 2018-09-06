@@ -272,10 +272,21 @@ aside:empty {
 		}
 	}
 
+	p {
+		padding: 4em 0 0 0;
+		max-width: 40em;
+		line-height: 1.6em;
+	}
+
+	p+p {
+		padding-top: 1em;
+	}
+
 	.header__intro {
 		margin-top: 16px;
 		font-weight: $light;
 		max-width: 320px;
+		padding: 0;
 	}
 
 	.header__wrapper {
@@ -313,7 +324,7 @@ aside:empty {
 	}
 
 	.image {
-		margin: 16px 0 0 0;
+		margin: 4em 0 0 0;
 		max-width: 100%;
 		vertical-align: top; // Removes white space reserved for descenders at base of image.
 	}

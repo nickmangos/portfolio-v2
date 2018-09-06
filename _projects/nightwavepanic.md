@@ -12,6 +12,7 @@ tags:
 file-name: nightwavepanic
 cover-image: nightwavepanic/cover.png
 ---
+
 <figure><img class="hero" src="/projects/{{page.file-name}}/hero.png" alt="Game interface elements" /></figure>
 <figure><img class="image" src="/projects/{{page.file-name}}/1.png" alt="Game logo and design elements" /></figure>
 <figure><img class="image" src="/projects/{{page.file-name}}/2.jpg" alt="In-game screenshot"/></figure>
