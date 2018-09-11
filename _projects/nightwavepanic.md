@@ -14,6 +14,11 @@ cover-image: nightwavepanic/cover.png
 ---
 
 <figure><img class="hero" src="/projects/{{page.file-name}}/hero.png" alt="Game interface elements" /></figure>
+
 <figure><img class="image" src="/projects/{{page.file-name}}/1.png" alt="Game logo and design elements" /></figure>
+
+Night Wave Panic is a game completed over 48 hours during the Global Game Jam. A prototype for a two player rhythm game where you and your opponent take turns at building rhythm patterns for the other to follow using four notes. Missed notes cause your vehicle to fall back.
+
 <figure><img class="image" src="/projects/{{page.file-name}}/2.jpg" alt="In-game screenshot"/></figure>
+
 <figure><img class="image" src="/projects/{{page.file-name}}/3.jpg" alt="Title screenshot"/></figure>
