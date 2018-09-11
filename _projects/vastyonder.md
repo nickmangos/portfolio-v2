@@ -21,6 +21,8 @@ It has a dark monochromatic design with smokey greys that puts the vibrant image
 
 <figure><img class="image" src="/projects/{{page.file-name}}/1.png" alt="!" /></figure>
 
-Built with Jekyll and hosted on GitHub, I configured the website to work with Prose.io, allowing the client to edit and upload content from the browser.  
+Built with Jekyll and hosted on GitHub, I configured the website to work with Prose.io, allowing the client to edit and upload content from the browser.
 
-<!--<figure><img class="image" src="/projects/{{page.file-name}}/2.png" alt="!" /></figure>--> 
+<figure><img class="image" src="/projects/{{page.file-name}}/3.png" alt="!" /></figure>
+
+<figure><img class="image" src="/projects/{{page.file-name}}/2.png" alt="!" /></figure>

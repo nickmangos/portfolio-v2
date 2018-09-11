@@ -7,8 +7,10 @@ website: http://globalgamejam.org/2017/games/night-wave-panic
 tags:
   - design
   - ui
+  - logo
   - video game
   - 3d
+
 file-name: nightwavepanic
 cover-image: nightwavepanic/cover.png
 ---
