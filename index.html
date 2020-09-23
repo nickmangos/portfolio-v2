@@ -2,132 +2,22 @@
 layout: default
 title: Portfolio of Nick Mangos
 ---
-<body class="grid--main">
-	<header class="header">
-		<a class="header__logo" href="index.html">
+
+<body class="grid--list format--list">
+	<header class="header--list">
+		<a class="header__logo" href="/index.html">
 			<svg width="31" height="24" viewBox="0 0 31 24">
 				<path fill-rule="evenodd" d="M123.282345,174.401303 L123.282345,151.6 L117.875179,151.6 L117.875179,165.671661 L107.354007,151.6 L102.24,151.6 L102.24,174.401303 L107.679739,174.401303 L107.679739,160.362215 L118.168339,174.401303 L123.282345,174.401303 Z M129.503844,169.22215 C127.907752,169.22215 126.800261,170.329642 126.800261,171.925733 C126.800261,173.554397 127.907752,174.661889 129.503844,174.661889 C131.099935,174.661889 132.24,173.554397 132.24,171.925733 C132.24,170.329642 131.099935,169.22215 129.503844,169.22215 Z" transform="translate(-102 -151)"/>
 			</svg>
 		</a>
-		<h1 class="header__intro">Hi, I'm Nick, Digital Product Designer / Prototyper based in Wellington, NZ</h1>
+		<h1 class="header__intro">Portfolio in development</h1>
 	</header>
-	<section class="grid__section">
-		<aside class="aside cf">
-			<span class="aside__new">
-				<svg class="aside__new--small" width="47" height="36" viewBox="0 0 47 36">
-					<g fill="none" fill-rule="evenodd">
-						<path stroke="#000" stroke-width="2" d="M24,34.0710678 L18.2218254,28.2928932 L17.9289322,28 L17.5147186,28 L1,28 L1,1 L46,1 L46,28 L30.4852814,28 L30.0710678,28 L29.7781746,28.2928932 L24,34.0710678 Z"/>
-						<text fill="#000" font-family="Montserrat-SemiBold, Montserrat" font-size="12" font-weight="600" letter-spacing="1.286">
-							<tspan x="6.939" y="19">NEW</tspan>
-						</text>
-					</g>
-				</svg>
-				<svg class="aside__new--large" height="29" viewBox="0 0 53 29">
-					<g fill="none" fill-rule="evenodd">
-						<text fill="#000" font-family="Montserrat-SemiBold, Montserrat" font-size="12" font-weight="600" letter-spacing="1.286">
-							<tspan x="12.939" y="19">NEW</tspan>
-						</text>
-						<path stroke="#000" stroke-width="2" d="M1.41421356,14.4852814 L6.70710678,9.19238816 L7,8.89949494 L7,8.48528137 L7,1 L52,1 L52,28 L7,28 L7,20.4852814 L7,20.0710678 L6.70710678,19.7781746 L1.41421356,14.4852814 Z"/>
-					</g>
-				</svg>
-			</span>
-		</aside>
-		<div class="card__wrapper">
-		<a href="prototypes">
-			<div class="card card__prototypes">
-				<h2>Prototypes.</h2>
-				<svg class="card__shadow alpha" width="230" height="60" viewBox="-8 10 246 30" preserveAspectRatio="none">
-					<filter id="shadowblur" x="-30%" y="-60%" width="160%" height="220%">
-						<feGaussianBlur in="SourceGraphic" stdDeviation="5" />
-					</filter>
-					<path fill-rule="evenodd" d="M21.0026962,0 L211.002153,0 L230,30 C230,30 154.021965,27.309177 115,27.309177 C75.978035,27.309177 0,30 0,30 L21.0026962,0 Z" filter="url(#shadowblur)" />
-				</svg>
-			</div>
+	{% assign projects = site.projects | sort: 'date' | reverse %}
+	{% for project in projects %}
+		<a class="list-item" href="{{ project.url }}">
+			<img src="{{ project.cover-image }}">
+			<h2>{{ project.title | remove_first: 'Project - '}}</h2>
+			<p>{{ project.description }}</p>
 		</a>
-		</div>
-		<aside class="aside aside--bottom">
-			<a href="prototypes/colourtransition">
-				<div class="aside__latest">
-					<p>Latest</p>
-					<h3>Colour Transition</h3>
-					<p>Fades between two RGBA values</p>
-				</div>
-			</a>
-			<div class="counter">
-				<a>
-					<span class="counter__numerator">32</span>
-					<svg class="counter__denominator" width="36" height="21" viewBox="0 0 36 21">
-						<path fill-rule="evenodd" d="M16.588,19 L16.588,10.6 L13.108,10.6 L13.108,12.196 L14.692,12.196 L14.692,19 L16.588,19 Z M22.7337144,10.54 C25.0857144,10.54 26.3937144,12.052 26.3937144,14.788 C26.3937144,17.536 25.0857144,19.06 22.7337144,19.06 C20.3577144,19.06 19.0617144,17.536 19.0617144,14.788 C19.0617144,12.052 20.3577144,10.54 22.7337144,10.54 Z M22.7337144,11.992 C21.5457144,11.992 21.0057144,12.82 21.0057144,14.788 C21.0057144,16.768 21.5457144,17.608 22.7337144,17.608 C23.9097144,17.608 24.4497144,16.768 24.4497144,14.788 C24.4497144,12.82 23.9097144,11.992 22.7337144,11.992 Z M31.8074287,10.54 C34.1594287,10.54 35.4674287,12.052 35.4674287,14.788 C35.4674287,17.536 34.1594287,19.06 31.8074287,19.06 C29.4314287,19.06 28.1354287,17.536 28.1354287,14.788 C28.1354287,12.052 29.4314287,10.54 31.8074287,10.54 Z M31.8074287,11.992 C32.9834287,11.992 33.5234287,12.82 33.5234287,14.788 C33.5234287,16.768 32.9834287,17.608 31.8074287,17.608 C30.6194287,17.608 30.0794287,16.768 30.0794287,14.788 C30.0794287,12.82 30.6194287,11.992 31.8074287,11.992 Z M15.2982057,0 L17.2982057,0 L2,20.7814937 L0,20.7814937 L15.2982057,0 Z"/>
-					</svg>
-				</a>
-			</div>
-		</aside>
-	</section>
-	<section class="grid grid__section">
-		<div class="card__wrapper">
-		<a href="projects">
-			<div class="card  card__projects">
-				<h2>Projects.</h2>
-				<svg class="card__shadow bravo" width="230" height="60" viewBox="-8 10 246 30" preserveAspectRatio="none">
-					<filter id="shadowblur" x="-30%" y="-60%" width="160%" height="220%">
-						<feGaussianBlur in="SourceGraphic" stdDeviation="5" />
-					</filter>
-					<path fill-rule="evenodd" d="M21.0026962,0 L211.002153,0 L230,30 C230,30 154.021965,27.309177 115,27.309177 C75.978035,27.309177 0,30 0,30 L21.0026962,0 Z" filter="url(#shadowblur)" />
-				</svg>
-			</div>
-		</a>
-		</div>
-		<aside class="aside aside--bottom">
-			<a href="/projects/trailblazer">
-				<div class="aside__latest">
-					<p>Featured</p>
-					<h3>Trailblazer</h3>
-					<p>A Chrome Extension that records and maps your online research</p>
-				</div>
-			</a>
-		</aside>
-	</section>
-	<section class="grid grid__section">
-		<div class="card__wrapper">
-			<div class="card card__case-studies">
-				<h2>Case Studies.</h2>
-				<svg class="card__shadow charlie" width="230" height="60" viewBox="-8 10 246 30" preserveAspectRatio="none">
-					<filter id="shadowblur" x="-30%" y="-60%" width="160%" height="220%">
-						<feGaussianBlur in="SourceGraphic" stdDeviation="5" />
-					</filter>
-					<path fill-rule="evenodd" d="M21.0026962,0 L211.002153,0 L230,30 C230,30 154.021965,27.309177 115,27.309177 C75.978035,27.309177 0,30 0,30 L21.0026962,0 Z" filter="url(#shadowblur)" />
-				</svg>
-			</div>
-		</div>
-		<aside></aside>
-	</section>
-	<section class="grid grid__section">
-		<div class="card__wrapper">
-			<div class="card card__notebook">
-				<h2>Notebook.</h2>
-				<svg class="card__shadow delta" width="230" height="60" viewBox="-8 10 246 30" preserveAspectRatio="none">
-					<filter id="shadowblur" x="-30%" y="-60%" width="160%" height="220%">
-						<feGaussianBlur in="SourceGraphic" stdDeviation="5" />
-					</filter>
-					<path fill-rule="evenodd" d="M21.0026962,0 L211.002153,0 L230,30 C230,30 154.021965,27.309177 115,27.309177 C75.978035,27.309177 0,30 0,30 L21.0026962,0 Z" filter="url(#shadowblur)" />
-				</svg>
-			</div>
-		</div>
-		<aside></aside>
-	</section>
-	<section class="grid grid__section">
-		<div class="card__wrapper">
-			<div class="card card__recipes">
-				<h2>Recipes.</h2>
-				<svg class="card__shadow echo" width="230" height="60" viewBox="-8 10 246 30" preserveAspectRatio="none">
-					<filter id="shadowblur" x="-30%" y="-60%" width="160%" height="220%">
-						<feGaussianBlur in="SourceGraphic" stdDeviation="5" />
-					</filter>
-					<path fill-rule="evenodd" d="M21.0026962,0 L211.002153,0 L230,30 C230,30 154.021965,27.309177 115,27.309177 C75.978035,27.309177 0,30 0,30 L21.0026962,0 Z" filter="url(#shadowblur)" />
-				</svg>
-			</div>
-		</div>
-		<aside></aside>
-	</section>
+	{% endfor %}
 </body>
-

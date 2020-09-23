@@ -13,6 +13,9 @@
 		position: fixed;
 		left: 24px;
 	}
+	svg path {
+		fill: #ffffff;
+	}
 }
 
 .header__logo--prototype {
@@ -29,7 +32,6 @@
 		left: 24px;
 		top: 76px;
 	}
-	
 }
 
 .header__intro {

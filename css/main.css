@@ -423,7 +423,7 @@ template {
 html {
   min-height: 100%;
   min-width: 100%;
-  background-color: #EDEDED; }
+  background-color: #222; }
 
 /*border box model*/
 *, *:before, *:after {
@@ -432,7 +432,7 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 1em;
-  color: #000;
+  color: #fff;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   max-width: 1200px; }
@@ -489,23 +489,23 @@ p {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
   transition: .2s; }
 
 .button__icon {
-  fill: #000;
+  fill: #fff;
   transition: 0.2s; }
 
 a:hover {
   text-decoration: none;
-  color: #646;
-  fill: #646;
-  border-color: #646;
+  color: #ccc;
+  fill: #ccc;
+  border-color: #ccc;
   transition: .2s; }
   a:hover svg {
-    fill: #646; }
+    fill: #ccc; }
     a:hover svg path {
-      fill: #646;
+      fill: #ccc;
       transition: 0.2s; }
   a:hover .card path {
     fill: inherit; }
@@ -602,6 +602,9 @@ header {
   .header__logo {
     position: fixed;
     left: 24px; } }
+
+.header__logo svg path {
+  fill: #ffffff; }
 
 .header__logo--prototype {
   margin-top: 100px; }
@@ -735,7 +738,7 @@ aside:empty {
 
 .info__number {
   display: inline-block;
-  border: 2px solid #000;
+  border: 2px solid #fff;
   padding: 5px 7px 3px 7px;
   font-size: 1em;
   font-weight: 600;
@@ -749,7 +752,7 @@ aside:empty {
   margin-bottom: -10px; }
   .info__tags li {
     display: inline-block;
-    border: 1px solid #000;
+    border: 1px solid #fff;
     padding: 7px 9px;
     font-size: 0.625em;
     font-weight: 400;
@@ -759,7 +762,7 @@ aside:empty {
 .button {
   display: inline-block;
   position: relative;
-  border: 2px solid #000;
+  border: 2px solid #fff;
   font-size: 0.75em;
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -902,7 +905,7 @@ aside:empty {
   top: 0;
   left: 0;
   border: none;
-  background-color: #EDEDED; }
+  background-color: #222; }
 
 .device__wrapper {
   -webkit-overflow-scrolling: touch;
