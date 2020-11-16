@@ -1,8 +1,9 @@
-var gulp        = require('gulp');
+var gulp = require('gulp');
 var browserSync = require('browser-sync');
 var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
+var { task, series, src, dest, watch, parallel } = require("gulp");
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -56,13 +57,15 @@ gulp.task('browser-sync', gulp.series('sass', 'jekyll-build', function() {
  * Watch scss files for changes & recompile
  * Watch html/md files, run jekyll & reload BrowserSync
  */
+
 gulp.task('watch', function () {
+    gulp.watch(['*.html', '_layouts/*.html'], gulp.series('jekyll-rebuild'));
     gulp.watch('_scss/**/*.scss', gulp.series('sass'));
-    // gulp.watch('*.html', '_layouts/*.html', '_projects/*.md', '_prototypes/*.md', ['jekyll-rebuild']);
+    // gulp.watch('*.html', '_layouts/*.html', '_projects/*.md', '_prototypes/*.md', gulp.series('jekyll-rebuild'));
 });
 
 /**
  * Default task, running just `gulp` will compile the sass,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
-gulp.task('default', gulp.series('browser-sync', 'watch'));
+gulp.task('default', gulp.parallel('browser-sync', 'watch'));

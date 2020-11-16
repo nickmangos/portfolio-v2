@@ -36,7 +36,7 @@
 
 .header__intro {
 	margin-top: 16px;
-	max-width: 520px;
+	max-width: 700px;
 	font-weight: $regular;
 	@include for-tablet-portrait-up {
 		margin-top: -5px; // Aligns text with logo
@@ -220,13 +220,17 @@ aside:empty {
 
 	h1 {
 		font-size: $x-large;
-		font-weight: $regular;
+		font-weight: $bold;
+		span {
+			color: $grey;
+		}
 		@include for-tablet-portrait-up {
 			margin-top: -8px; // Aligns text with logo
 		}
 	}
-	h2 {
+	h3 {
 		font-size: $medium;
+		font-size: $regular;
 		padding-top: 16px;
 		max-width: 280px;
 	}

@@ -10,14 +10,17 @@ title: Portfolio of Nick Mangos
 				<path fill-rule="evenodd" d="M123.282345,174.401303 L123.282345,151.6 L117.875179,151.6 L117.875179,165.671661 L107.354007,151.6 L102.24,151.6 L102.24,174.401303 L107.679739,174.401303 L107.679739,160.362215 L118.168339,174.401303 L123.282345,174.401303 Z M129.503844,169.22215 C127.907752,169.22215 126.800261,170.329642 126.800261,171.925733 C126.800261,173.554397 127.907752,174.661889 129.503844,174.661889 C131.099935,174.661889 132.24,173.554397 132.24,171.925733 C132.24,170.329642 131.099935,169.22215 129.503844,169.22215 Z" transform="translate(-102 -151)"/>
 			</svg>
 		</a>
-		<h1 class="header__intro">Portfolio in development</h1>
+		<h1 class="header__intro">Nick Mangos<br><span>Product Designer</span></h1>
+		<h3 class="header__intro">Multi-disciplined designer with a focus on high-fidelity prototyping.</h3>
 	</header>
 	{% assign projects = site.projects | sort: 'date' | reverse %}
 	{% for project in projects %}
 		<a class="list-item" href="{{ project.url }}">
-			<img src="{{ project.cover-image }}">
+			<img src="projects/{{ project.cover-image }}">
 			<h2>{{ project.title | remove_first: 'Project - '}}</h2>
-			<p>{{ project.description }}</p>
+			<ul>
+				
+			</ul>
 		</a>
 	{% endfor %}
 </body>
