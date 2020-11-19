@@ -7,6 +7,7 @@ website: null
 tags:
   - print
   - design
+tag-colour: BFAA70
 cover-image: savethedate/cover.png
 hero-image: savethedate/hero.png
 ---

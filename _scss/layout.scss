@@ -2,18 +2,6 @@
 //Styles for non-grid support go here.
 
 @supports (display: grid) {
-	.grid--main {
-		display: grid;
-		margin: $card-margin-mobile;
-		grid-gap: $card-margin-mobile;
-		@include for-phone-landscape-up {
-			grid-row-gap: 16px; // Create a variable / Maybe make this consistant at all sizes and change the magin behavior on the aside elements.
-		}
-		@include for-tablet-portrait-up {
-			margin-left: 105px;
-			margin-right: 64px;
-		}
-	}
 
 	.grid__section {
 		display: grid;
@@ -28,11 +16,12 @@
 	.grid--list {
 		display: grid;
 		margin: $card-margin-mobile;
-		grid-gap: 32px;
-		@include for-phone-landscape-up {
-			grid-template-columns: repeat(auto-fill, 320px)
-		}
+		grid-gap: 16px;
 		@include for-tablet-portrait-up {
+			grid-template-columns: repeat(auto-fill, 320px);
+			margin-left: 32px;
+		}
+		@include for-tablet-landscape-up {
 			margin-left: 105px;
 			margin-right: 32px;
 			margin-bottom: 64px;

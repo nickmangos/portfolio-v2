@@ -1,14 +1,14 @@
 ---
 layout: project
 date: 24/6/2017
-title: Project - Leaping Tiger Landing Page
+title: Project - Leaping Tiger Website
 description: Landing Page for Leaping Tiger, an app that connects gamers
 website: https://overwatch.leaping-tiger.com/
 tags:
   - front-end
   - design
   - illustration
-
+tag-colour: A965FF
 file-name: leapingtiger
 cover-image: leapingtiger/cover.png
 ---

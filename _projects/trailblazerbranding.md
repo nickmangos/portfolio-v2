@@ -8,6 +8,7 @@ tags:
   - logo
   - branding
   - colour
+tag-colour: 43BC9F
 file-name: trailblazerbranding
 cover-image: trailblazerbranding/cover.png
 ---

@@ -9,12 +9,13 @@
 }
 
 .header__logo {
-	@include for-tablet-portrait-up {
+	@include for-tablet-landscape-up {
 		position: fixed;
 		left: 24px;
+		top:120px;
 	}
 	svg path {
-		fill: #ffffff;
+		fill: $accent-color;
 	}
 }
 
@@ -181,7 +182,6 @@ aside:empty {
 .info__tags {
 	list-style: none;
 	padding: 0;
-	margin-bottom: -10px;
 	li {
 		display: inline-block;
 		border: 1px solid $primary-color;
@@ -219,20 +219,28 @@ aside:empty {
 .format--list {
 
 	h1 {
-		font-size: $x-large;
+		margin-top: 34px;
+		font-size: $large;
 		font-weight: $bold;
+		letter-spacing: -0.04em;
 		span {
-			color: $grey;
+			color: $accent-color;
 		}
 		@include for-tablet-portrait-up {
-			margin-top: -8px; // Aligns text with logo
+			margin-top: 34px; // Aligns text with logo !!! Currently Hacky
+			font-size: $x-large;
 		}
 	}
 	h3 {
-		font-size: $medium;
-		font-size: $regular;
+		font-size: $medium-alt;
+		line-height: 1.4em;
 		padding-top: 16px;
-		max-width: 280px;
+		max-width: 400px;
+		@include for-tablet-portrait-up {
+			font-size: $medium;
+			margin-top: 10px;
+			margin-bottom: 30px;
+		}
 	}
 	p {
 		padding-top: 4px;
@@ -245,33 +253,86 @@ aside:empty {
 .list-item {
 	position: relative;
 	display: block;
-	max-width: 420px;
-	margin-bottom: 16px;
+	max-width: 400px;
+	height: 180px;
+	padding: 16px;
+	border-radius: 14px;
+
+	h2 {
+		max-width: 180px;
+		position: absolute;
+		bottom: 16px;
+		left: 16px;
+		font-size: $small;
+		@include for-phone-landscape-up {
+			position: relative;
+			font-size: $medium-alt;
+			padding-bottom: 8px;
+			max-width: 200px;
+			bottom: 0;
+			left: 0;
+		}
+	}
+	.list-item__info {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		padding: 26px;
+	}
+	.info__tags {
+		position: absolute;
+		list-style: none;
+		padding: 0;
+		bottom: 16px;
+		right: 16px;
+		width: 140px;
+		li {
+			display: inline-block;
+			border: none;
+			border-radius: 2px;
+			background-color: #333;
+			padding: 5px 7px;
+			font-size: $x-small-alt;
+			font-weight: $semi-bold;
+			font-style: normal;
+			float: right;
+			margin: 4px 0 0 4px;
+		}
+		@include for-phone-landscape-up {
+			position: relative;
+			width: 200px;
+			bottom: 0;
+			right: 0;
+			li {
+				padding: 7px 9px;
+				float: left;
+				margin: 4px 4px 0 0;
+			}
+		}
+	}
+
 	@include for-phone-landscape-up {
+		max-width: 332px;
+		height: 450px;
 	}
 	@include for-tablet-portrait-up {
-		max-width: 320px;
+		
 	}
-}
-
-.list-item img{
-	max-width: 100%;
-	opacity: 1;
-	transition: .2s;
-}
-
-.list-item img:hover{
-	opacity: 0.92;
-	transition: .2s;
 }
 
 .format--project {
+	body {
+		background-color: white; // Default, can be override with frontmatter.
+	}
+
 	header {
 		margin-bottom: 0px; // Temp
 	}
 
 	h1 {
-		font-size: 32px;
+		font-size: $large;
+		font-weight: bold;
 		margin-top: 32px;
 		@include for-tablet-portrait-up {
 			margin-top: -8px;
@@ -422,108 +483,5 @@ aside:empty {
 		fill: #E4D0FF;
 	}
 }
-
-//Test - Maybe make these a hero card class.
-.card__prototypes {
-	min-height: 120px;
-	@include for-phone-landscape-up {
-		height: 100%;
-	}
-}
-//End test
-
-
-.card__case-studies {
-	height: 100px;
-}
-
-.card__prototypes {
-	@include linearGradient(#D5EEA5, #99FFE3);
-}
-
-.card__projects {
-	@include linearGradient(#88EDE3, #C7FFFA);
-	height: 100%;
-}
-
-.card__case-studies {
-	@include linearGradient(#98F1FF, #C7DCFF);
-}
-
-.card__notebook {
-	@include linearGradient(#DCC3FE, #C4DCFE);
-}
-
-.card__recipes {
-	@include linearGradient(#FCBCB6, #FAC3F2);
-}
-
-.card__shadow {
-	display: block;
-	position: absolute;
-	margin-right: auto;
-	margin-left: auto;
-	bottom: -20px;
-	width: 100%;
-	left: 0;
-	right: 0;
-	z-index: -5;
-}
-
-.card__shadow.alpha {
-	fill: #57C19b;
-}
-.card__shadow.bravo {
-	fill: #7AC5BE;
-}
-.card__shadow.charlie {
-	fill: #5EA1D2;
-}
-.card__shadow.delta {
-	fill: #A18BE9;
-}
-.card__shadow.echo {
-	fill: #A06A99;
-}
-
-@include for-desktop-up {
-	.card__prototypes {
-		@include linearGradient--alt(#EDE088, #D5EEA5);
-	}
-
-	.card__projects {
-		@include linearGradient(#D5EEA5, #20DEFF);
-		height: 100%;
-	}
-
-	.card__case-studies {
-		@include linearGradient(#ECE088, #FECBC3);
-	}
-
-	.card__notebook {
-		@include linearGradient--alt(#FEC3D7, #9FC9FD);
-	}
-
-	.card__recipes {
-		@include linearGradient(#FCBCB6, #FAC3F2);
-	}
-
-	.card__shadow.alpha {
-		fill: #C6C77B;
-	}
-	.card__shadow.bravo {
-		fill: #36C0C9;
-	}
-	.card__shadow.charlie {
-		fill: #DDB199;
-	}
-	.card__shadow.delta {
-		fill: #B3A9D2;
-	}
-	.card__shadow.echo {
-		fill: #DAA3C6;
-	}
-}
-
 
 

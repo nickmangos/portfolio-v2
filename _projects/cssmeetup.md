@@ -7,6 +7,7 @@ website: https://www.meetup.com/WellingtonCSS/
 tags:
   - logo
   - colour
+tag-colour: 5F9FE0
 file-name: cssmeetup
 cover-image: cssmeetup/cover.png
 ---
