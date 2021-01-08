@@ -15,7 +15,7 @@ title: Portfolio of Nick Mangos
 	</header>
 	{% assign projects = site.projects | sort: 'date' | reverse %}
 	{% for project in projects %}
-		<a class="list-item" href="{{ project.url }}" style="background-image: url( projects/{{ project.cover-image }}); background-size: cover; background-position: center;" >
+		<a class="list-item" href="{{ project.url }}" style="background-color: grey;">
 			<!--<img src="projects/{{ project.cover-image }}">-->
 			<div class="list-item__info cf">
 				<h2>{{ project.title | remove_first: 'Project - '}}</h2>
@@ -23,6 +23,7 @@ title: Portfolio of Nick Mangos
 					{% for item in project.tags %}<li style="background-color: #{{ project.tag-colour }};">{{ item | upcase }}</li>{% endfor %}
 				</ul>
 			</div>
+			{{ project.cover-elements }}
 		</a>
 	{% endfor %}
 </body>
