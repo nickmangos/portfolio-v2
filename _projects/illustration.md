@@ -6,6 +6,9 @@ description: Various Illustrations
 website: null
 tags:
   - illustration
+  - vector
+  - pixel
+  - 3d
 tag-colour: 566D90
 cover-image: illustration/cover.png
 hero-image: null
