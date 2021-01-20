@@ -11,7 +11,7 @@
 .header__logo {
 	@include for-tablet-landscape-up {
 		position: fixed;
-		left: 24px;
+		left: 24px;	
 		top:120px;
 	}
 	svg path {
@@ -182,6 +182,7 @@
 	height: 180px;
 	// padding: 16px; Removed, may be unneeded.
 	border-radius: 14px;
+	overflow: hidden;
 
 	h2 {
 		max-width: 180px;
@@ -245,6 +246,278 @@
 		
 	}
 }
+
+
+
+@mixin card-background($property) {
+  -webkit-transition: $property;
+  -o-transition: $property;
+  -moz-transition: $property;
+  transition: $property;
+}
+
+$transition-speed : 0.3s;
+
+.list-item.trailblazer {
+	background-color: #A965FF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	@include card-background(background-color $transition-speed);
+	.animation {
+		max-width: 100%;
+	}
+}	
+.list-item.trailblazer:hover {
+	background-color: #BB65FF;
+	@include card-background(background-color $transition-speed);
+}
+
+.animation__trailblazer {
+	pointer-events: none;
+	.trailblazer__glow, .trailblazer__node {
+		fill: #fff;
+		transform: scale(1);
+		transform-origin: center;
+		animation-name: expand;
+		animation-duration: 0.1s;
+		animation-direction: alternate;
+		animation-delay: 1s;
+
+		@keyframes expand {
+			0% {
+				transform: scale(1);
+			}
+			100% {
+				transform: scale(1.06);
+			}
+		} 
+	}
+	.trailblazer__glow {
+		opacity: 0.2;
+		animation-duration: 0.2s;
+		animation-delay: 1.04s;	
+	}
+
+	.trailblazer__notification {
+		fill: #FF5B5B;
+		opacity: 0;
+		animation-name: flag;
+		animation-duration: 6s;
+		animation-delay: 1s;
+		animation-timing-function: cubic-bezier(.13,.7,.3,1.33);
+		transform: translate(-10px, 10px);
+
+
+		@keyframes flag {
+			2% {
+				transform: translate(-10px, 10px);
+				opacity: 0;
+			}
+			6% {
+				transform: translate(0, 0);
+				opacity: 1;
+			}
+			100%{
+				transform: translate(0, 0);
+				opacity: 1;
+			}
+		}
+	}
+	@include for-phone-portrait-only{
+		width: 240px;
+	}
+}
+
+
+
+.list-item.vastyonder {
+	background-color: #333;
+	@include card-background(background-color $transition-speed);
+	.animation {
+		max-width: 100%;
+	}
+}	
+.list-item.vastyonder:hover {
+	background-color: #292929;
+	@include card-background(background-color $transition-speed);
+}
+
+
+
+
+
+.list-item.leapingtiger {
+	background-color: #C9C4FF;
+	background-image: url("/projects/leapingtiger/card x2.png");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 80%;
+	@include for-phone-portrait-only{
+		background-size: 60%;
+		back
+	}
+	@include card-background(background-color $transition-speed);
+	.animation {
+		max-width: 100%;
+	}
+}	
+.list-item.leapingtiger:hover {
+	background-color: #BAAEFF;
+	@include card-background(background-color $transition-speed);
+}
+
+.list-item.leapingtiger::before {
+	content: "";
+	position: absolute;
+	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0,0,0,0.5));
+	opacity: 1;
+	transition: opacity $transition-speed ease-out;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.list-item.leapingtiger:hover::before {
+	opacity: 0.0;
+}
+
+
+
+
+.list-item.nightwavepanic {
+	background-color: #01041E;
+	@include card-background(background-color $transition-speed);
+	.animation {
+		max-width: 100%;
+	}
+}	
+.list-item.nightwavepanic:hover {
+	background-color: #000632;
+	@include card-background(background-color $transition-speed);
+}
+
+
+
+.list-item.trailblazerbranding {
+	background: linear-gradient(#99CB80, #70A370);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.animation {
+		max-width: 100%;
+	}
+}	
+
+.list-item.trailblazerbranding::before {
+	content: "";
+	position: absolute;
+	background-color: #99CB80;
+	opacity: 0.0;
+	transition: opacity $transition-speed ease-out;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.list-item.trailblazerbranding:hover::before {
+	opacity: 0.4;
+}
+
+.animation__trailblazerbranding {
+	pointer-events: none;
+	transform: rotate(0deg);
+	animation-name: trailblazerBrandingRotate;
+		animation-duration: 0.8s;
+		animation-delay: 1s;
+		animation-timing-function: ease-out;
+
+		@keyframes trailblazerBrandingRotate {
+			100% {
+				transform: rotate(360deg);
+			}
+		} 
+
+	.trailblazer__needle {
+		d:path('M44.3344 45.1317L52.8803 22.353C53.3564 21.0839 51.6925 20.1223 50.8306 21.1684L32.8166 43.0333C32.4131 43.523 32.7131 44.265 33.3435 44.3368L43.7048 45.5171C43.9782 45.5483 44.2378 45.3894 44.3344 45.1317Z');
+		animation-name: traiblazerBrandingSnap;
+		animation-duration: 1s;
+		animation-delay: 1s;
+
+		@keyframes traiblazerBrandingSnap {
+			20% {
+				d:path('M47.6455 44.5045L53.9614 20.0267C54.3066 18.6886 52.4888 17.9232 51.773 19.1053L38.6776 40.7284C38.4247 41.146 38.6015 41.6907 39.0515 41.8802L46.5605 45.0419C47.0104 45.2313 47.5236 44.9771 47.6455 44.5045Z');
+			}
+			80% {
+				d:path('M47.6455 44.5045L53.9614 20.0267C54.3066 18.6886 52.4888 17.9232 51.773 19.1053L38.6776 40.7284C38.4247 41.146 38.6015 41.6907 39.0515 41.8802L46.5605 45.0419C47.0104 45.2313 47.5236 44.9771 47.6455 44.5045Z');
+				animation-timing-function: cubic-bezier(0.09,1.21,0.69,1.61);
+			}
+		} 
+	}
+}
+
+
+
+.list-item.savethedate {
+	background-color: #CABC95;
+	@include card-background(background-color $transition-speed);
+	.animation {
+		max-width: 100%;
+	}
+}	
+.list-item.savethedate:hover {
+	background-color: #DACCA5;
+	@include card-background(background-color $transition-speed);
+}
+
+
+
+.list-item.cssmeetup {
+	background-color: #FFF;
+	@include card-background(background-color $transition-speed);
+	.animation {
+		max-width: 100%;
+	}
+}	
+/* .list-item.cssmeetup:hover {
+	background-color: #BB65FF;
+	@include card-background(background-color $transition-speed);
+} */
+
+.list-item.cssmeetup::before {
+	content: "";
+	position: absolute;
+	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0,0,0,0.25));
+	opacity: 1;
+	transition: opacity $transition-speed ease-out;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.list-item.cssmeetup:hover::before {
+	opacity: 0.5;
+}
+
+
+.list-item.illustration {
+	background-color: #041021;
+	@include card-background(background-color $transition-speed);
+	.animation {
+		max-width: 100%;
+	}
+}	
+.list-item.illustration:hover {
+	background-color: #BB65FF;
+	@include card-background(background-color $transition-speed);
+}
+
+
+
+
 
 .format--project {
 

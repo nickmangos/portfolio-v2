@@ -15,7 +15,7 @@ title: Portfolio of Nick Mangos
 	</header>
 	{% assign projects = site.projects | sort: 'date' | reverse %}
 	{% for project in projects %}
-		<a class="list-item" href="{{ project.url }}" style="background-color: grey;">
+		<a class="list-item {{ project.file-name }}" href="{{ project.url }}">
 			<!--<img src="projects/{{ project.cover-image }}">-->
 			<div class="list-item__info cf">
 				<h2>{{ project.title | remove_first: 'Project - '}}</h2>

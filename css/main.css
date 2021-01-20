@@ -504,20 +504,26 @@ a {
   fill: #fff;
   transition: 0.2s; }
 
-a:hover {
-  text-decoration: none;
-  color: #ccc;
-  fill: #ccc;
-  border-color: #ccc;
-  transition: .2s; }
-  a:hover svg {
-    fill: #ccc; }
-    a:hover svg path {
-      fill: #ccc;
-      transition: 0.2s; }
-  a:hover .card path {
-    fill: inherit; }
-
+/*a:hover{
+	text-decoration: none;
+	color: $hover-colour;
+	fill: $hover-colour;
+	border-color: $hover-colour;
+	transition: .2s;
+	svg {
+		fill: $hover-colour;
+		path {
+			fill: $hover-colour;
+			transition: 0.2s;
+		}
+	}
+	.card {
+		path {
+			fill: inherit;
+		}
+	}
+}
+*/
 .cf:before,
 .cf:after {
   content: " ";
@@ -744,7 +750,8 @@ header {
   display: block;
   max-width: 400px;
   height: 180px;
-  border-radius: 14px; }
+  border-radius: 14px;
+  overflow: hidden; }
   .list-item h2 {
     max-width: 180px;
     position: absolute;
@@ -797,6 +804,272 @@ header {
     .list-item {
       max-width: 332px;
       height: 450px; } }
+
+.list-item.trailblazer {
+  background-color: #A965FF;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  transition: background-color 0.3s; }
+  .list-item.trailblazer .animation {
+    max-width: 100%; }
+
+.list-item.trailblazer:hover {
+  background-color: #BB65FF;
+  transition: background-color 0.3s; }
+
+.animation__trailblazer {
+  pointer-events: none; }
+  .animation__trailblazer .trailblazer__glow, .animation__trailblazer .trailblazer__node {
+    fill: #fff;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-animation-name: expand;
+            animation-name: expand;
+    -webkit-animation-duration: 0.1s;
+            animation-duration: 0.1s;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s; }
+
+@-webkit-keyframes expand {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  100% {
+    -webkit-transform: scale(1.06);
+            transform: scale(1.06); } }
+
+@keyframes expand {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  100% {
+    -webkit-transform: scale(1.06);
+            transform: scale(1.06); } }
+  .animation__trailblazer .trailblazer__glow {
+    opacity: 0.2;
+    -webkit-animation-duration: 0.2s;
+            animation-duration: 0.2s;
+    -webkit-animation-delay: 1.04s;
+            animation-delay: 1.04s; }
+  .animation__trailblazer .trailblazer__notification {
+    fill: #FF5B5B;
+    opacity: 0;
+    -webkit-animation-name: flag;
+            animation-name: flag;
+    -webkit-animation-duration: 6s;
+            animation-duration: 6s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    -webkit-animation-timing-function: cubic-bezier(0.13, 0.7, 0.3, 1.33);
+            animation-timing-function: cubic-bezier(0.13, 0.7, 0.3, 1.33);
+    -webkit-transform: translate(-10px, 10px);
+            transform: translate(-10px, 10px); }
+
+@-webkit-keyframes flag {
+  2% {
+    -webkit-transform: translate(-10px, 10px);
+            transform: translate(-10px, 10px);
+    opacity: 0; }
+  6% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1; } }
+
+@keyframes flag {
+  2% {
+    -webkit-transform: translate(-10px, 10px);
+            transform: translate(-10px, 10px);
+    opacity: 0; }
+  6% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1; } }
+  @media (max-width: 399px) {
+    .animation__trailblazer {
+      width: 240px; } }
+
+.list-item.vastyonder {
+  background-color: #333;
+  transition: background-color 0.3s; }
+  .list-item.vastyonder .animation {
+    max-width: 100%; }
+
+.list-item.vastyonder:hover {
+  background-color: #292929;
+  transition: background-color 0.3s; }
+
+.list-item.leapingtiger {
+  background-color: #C9C4FF;
+  background-image: url("/projects/leapingtiger/card x2.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 80%;
+  transition: background-color 0.3s; }
+  @media (max-width: 399px) {
+    .list-item.leapingtiger {
+      background-size: 60%; } }
+  .list-item.leapingtiger .animation {
+    max-width: 100%; }
+
+.list-item.leapingtiger:hover {
+  background-color: #BAAEFF;
+  transition: background-color 0.3s; }
+
+.list-item.leapingtiger::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  opacity: 1;
+  transition: opacity 0.3s ease-out;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+.list-item.leapingtiger:hover::before {
+  opacity: 0.0; }
+
+.list-item.nightwavepanic {
+  background-color: #01041E;
+  transition: background-color 0.3s; }
+  .list-item.nightwavepanic .animation {
+    max-width: 100%; }
+
+.list-item.nightwavepanic:hover {
+  background-color: #000632;
+  transition: background-color 0.3s; }
+
+.list-item.trailblazerbranding {
+  background: linear-gradient(#99CB80, #70A370);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .list-item.trailblazerbranding .animation {
+    max-width: 100%; }
+
+.list-item.trailblazerbranding::before {
+  content: "";
+  position: absolute;
+  background-color: #99CB80;
+  opacity: 0.0;
+  transition: opacity 0.3s ease-out;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+.list-item.trailblazerbranding:hover::before {
+  opacity: 0.4; }
+
+.animation__trailblazerbranding {
+  pointer-events: none;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-animation-name: trailblazerBrandingRotate;
+          animation-name: trailblazerBrandingRotate;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out; }
+
+@-webkit-keyframes trailblazerBrandingRotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes trailblazerBrandingRotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+  .animation__trailblazerbranding .trailblazer__needle {
+    d: path("M44.3344 45.1317L52.8803 22.353C53.3564 21.0839 51.6925 20.1223 50.8306 21.1684L32.8166 43.0333C32.4131 43.523 32.7131 44.265 33.3435 44.3368L43.7048 45.5171C43.9782 45.5483 44.2378 45.3894 44.3344 45.1317Z");
+    -webkit-animation-name: traiblazerBrandingSnap;
+            animation-name: traiblazerBrandingSnap;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s; }
+
+@-webkit-keyframes traiblazerBrandingSnap {
+  20% {
+    d: path("M47.6455 44.5045L53.9614 20.0267C54.3066 18.6886 52.4888 17.9232 51.773 19.1053L38.6776 40.7284C38.4247 41.146 38.6015 41.6907 39.0515 41.8802L46.5605 45.0419C47.0104 45.2313 47.5236 44.9771 47.6455 44.5045Z"); }
+  80% {
+    d: path("M47.6455 44.5045L53.9614 20.0267C54.3066 18.6886 52.4888 17.9232 51.773 19.1053L38.6776 40.7284C38.4247 41.146 38.6015 41.6907 39.0515 41.8802L46.5605 45.0419C47.0104 45.2313 47.5236 44.9771 47.6455 44.5045Z");
+    -webkit-animation-timing-function: cubic-bezier(0.09, 1.21, 0.69, 1.61);
+            animation-timing-function: cubic-bezier(0.09, 1.21, 0.69, 1.61); } }
+
+@keyframes traiblazerBrandingSnap {
+  20% {
+    d: path("M47.6455 44.5045L53.9614 20.0267C54.3066 18.6886 52.4888 17.9232 51.773 19.1053L38.6776 40.7284C38.4247 41.146 38.6015 41.6907 39.0515 41.8802L46.5605 45.0419C47.0104 45.2313 47.5236 44.9771 47.6455 44.5045Z"); }
+  80% {
+    d: path("M47.6455 44.5045L53.9614 20.0267C54.3066 18.6886 52.4888 17.9232 51.773 19.1053L38.6776 40.7284C38.4247 41.146 38.6015 41.6907 39.0515 41.8802L46.5605 45.0419C47.0104 45.2313 47.5236 44.9771 47.6455 44.5045Z");
+    -webkit-animation-timing-function: cubic-bezier(0.09, 1.21, 0.69, 1.61);
+            animation-timing-function: cubic-bezier(0.09, 1.21, 0.69, 1.61); } }
+
+.list-item.savethedate {
+  background-color: #CABC95;
+  transition: background-color 0.3s; }
+  .list-item.savethedate .animation {
+    max-width: 100%; }
+
+.list-item.savethedate:hover {
+  background-color: #DACCA5;
+  transition: background-color 0.3s; }
+
+.list-item.cssmeetup {
+  background-color: #FFF;
+  transition: background-color 0.3s; }
+  .list-item.cssmeetup .animation {
+    max-width: 100%; }
+
+/* .list-item.cssmeetup:hover {
+	background-color: #BB65FF;
+	@include card-background(background-color $transition-speed);
+} */
+.list-item.cssmeetup::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25));
+  opacity: 1;
+  transition: opacity 0.3s ease-out;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+.list-item.cssmeetup:hover::before {
+  opacity: 0.5; }
+
+.list-item.illustration {
+  background-color: #041021;
+  transition: background-color 0.3s; }
+  .list-item.illustration .animation {
+    max-width: 100%; }
+
+.list-item.illustration:hover {
+  background-color: #BB65FF;
+  transition: background-color 0.3s; }
 
 .format--project header {
   margin-bottom: 0px; }

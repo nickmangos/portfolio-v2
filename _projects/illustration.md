@@ -10,6 +10,7 @@ tags:
   - pixel
   - 3d
 tag-colour: 566D90
+file-name: illustration
 cover-image: illustration/cover.png
 hero-image: null
 ---

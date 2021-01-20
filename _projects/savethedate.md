@@ -8,6 +8,7 @@ tags:
   - print
   - design
 tag-colour: BFAA70
+file-name: savethedate
 cover-image: savethedate/cover.png
 hero-image: savethedate/hero.png
 ---
