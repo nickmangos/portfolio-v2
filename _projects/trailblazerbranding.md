@@ -1,6 +1,6 @@
 ---
 layout: project
-date: 22/6/2017
+date: 22/6/2019
 title: Project - Trailblazer Branding Exploration
 description: Branding exercise for Trailblazer
 

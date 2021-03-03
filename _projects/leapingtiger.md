@@ -10,7 +10,7 @@ tags:
   - illustration
 tag-colour: A965FF
 file-name: leapingtiger
-cover-image: leapingtiger/cover.png
+cover-elements: <img src="/projects/leapingtiger/card x2.png">
 ---
 <figure><img class="hero" src="/projects/{{page.file-name}}/hero.png" alt="Leaping Tiger website in context" /></figure>
 

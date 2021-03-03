@@ -176,6 +176,7 @@
 }
 
 .list-item {
+	content-visibility: auto; // Need to test.
 	position: relative;
 	display: block;
 	max-width: 400px;
@@ -205,6 +206,7 @@
 		bottom: 0;
 		width: 100%;
 		padding: 26px;
+		z-index: 2;
 	}
 	.info__tags {
 		position: absolute;
@@ -332,14 +334,33 @@ $transition-speed : 0.3s;
 
 
 .list-item.vastyonder {
-	background-color: #333;
+	background-color: #fff;
 	@include card-background(background-color $transition-speed);
 	.animation {
 		max-width: 100%;
 	}
+	.card-background {
+		margin: auto;
+		height: 100%;
+		mix-blend-mode: multiply;
+		@include for-phone-portrait-only{
+			height: auto;
+			width: 100%;
+		}
+	}
+	.card-element {
+		position: absolute; 
+  		left: 0; 
+		  right: 0;
+		  top: 0;
+		  bottom: 0;
+  		margin: auto;
+  		width: 100px; /* Need a specific value to work */
+	}
+	
 }	
 .list-item.vastyonder:hover {
-	background-color: #292929;
+	background-color: #ddd;
 	@include card-background(background-color $transition-speed);
 }
 
@@ -349,14 +370,14 @@ $transition-speed : 0.3s;
 
 .list-item.leapingtiger {
 	background-color: #C9C4FF;
-	background-image: url("/projects/leapingtiger/card x2.png");
+	/* background-image: url("/projects/leapingtiger/card x2.png");
 	background-repeat: no-repeat;
 	background-position: bottom;
-	background-size: 80%;
-	@include for-phone-portrait-only{
-		background-size: 60%;
-		back
-	}
+	background-size: 90%; */
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+
 	@include card-background(background-color $transition-speed);
 	.animation {
 		max-width: 100%;
@@ -367,7 +388,7 @@ $transition-speed : 0.3s;
 	@include card-background(background-color $transition-speed);
 }
 
-.list-item.leapingtiger::before {
+.list-item.leapingtiger::before { // Gradient overlay for type legibility
 	content: "";
 	position: absolute;
 	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0,0,0,0.5));
@@ -377,11 +398,24 @@ $transition-speed : 0.3s;
 	left: 0;
 	bottom: 0;
 	right: 0;
+	z-index: 1;
 }
 
 .list-item.leapingtiger:hover::before {
 	opacity: 0.0;
 }
+
+.list-item.leapingtiger img {
+	position: absolute;
+	width: 90%;
+	bottom: 0;
+	z-index: 0;
+	@include for-phone-portrait-only{
+		width: 70%;
+		bottom: -80px;
+	}
+}
+
 
 
 
@@ -461,16 +495,26 @@ $transition-speed : 0.3s;
 
 
 .list-item.savethedate {
-	background-color: #CABC95;
+	background-color: #333;
 	@include card-background(background-color $transition-speed);
 	.animation {
 		max-width: 100%;
 	}
+	.card-element {
+		object-fit: cover;
+		position: absolute; 
+  		height: 100%;
+	}
+	.element__cage {
+		//fill: blue;
+	}
 }	
 .list-item.savethedate:hover {
-	background-color: #DACCA5;
+	background-color: #383838;
 	@include card-background(background-color $transition-speed);
 }
+
+
 
 
 
@@ -505,14 +549,25 @@ $transition-speed : 0.3s;
 
 .list-item.illustration {
 	background-color: #041021;
+	/* background-image: url("/projects/illustration/card x2.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 40%; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	@include card-background(background-color $transition-speed);
 	.animation {
 		max-width: 100%;
 	}
 }	
 .list-item.illustration:hover {
-	background-color: #BB65FF;
+	background-color: #0d1f38;
 	@include card-background(background-color $transition-speed);
+}
+
+.list-item.illustration .card-element {
+	width: 40%;
 }
 
 

@@ -9,9 +9,9 @@ tags:
   - vector
   - pixel
   - 3d
-tag-colour: 566D90
+tag-colour: 2D3F59
 file-name: illustration
-cover-image: illustration/cover.png
+cover-elements: <img class="card-element" src="/projects/illustration/card x2.png">
 hero-image: null
 ---
 

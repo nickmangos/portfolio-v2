@@ -746,6 +746,7 @@ header {
   max-width: 280px; }
 
 .list-item {
+  content-visibility: auto;
   position: relative;
   display: block;
   max-width: 400px;
@@ -771,7 +772,8 @@ header {
     left: 0;
     bottom: 0;
     width: 100%;
-    padding: 26px; }
+    padding: 26px;
+    z-index: 2; }
   .list-item .info__tags {
     position: absolute;
     list-style: none;
@@ -905,25 +907,45 @@ header {
       width: 240px; } }
 
 .list-item.vastyonder {
-  background-color: #333;
+  background-color: #fff;
   transition: background-color 0.3s; }
   .list-item.vastyonder .animation {
     max-width: 100%; }
+  .list-item.vastyonder .card-background {
+    margin: auto;
+    height: 100%;
+    mix-blend-mode: multiply; }
+    @media (max-width: 399px) {
+      .list-item.vastyonder .card-background {
+        height: auto;
+        width: 100%; } }
+  .list-item.vastyonder .card-element {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100px;
+    /* Need a specific value to work */ }
 
 .list-item.vastyonder:hover {
-  background-color: #292929;
+  background-color: #ddd;
   transition: background-color 0.3s; }
 
 .list-item.leapingtiger {
   background-color: #C9C4FF;
-  background-image: url("/projects/leapingtiger/card x2.png");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: 80%;
+  /* background-image: url("/projects/leapingtiger/card x2.png");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 90%; */
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  -ms-flex-pack: center;
+      justify-content: center;
   transition: background-color 0.3s; }
-  @media (max-width: 399px) {
-    .list-item.leapingtiger {
-      background-size: 60%; } }
   .list-item.leapingtiger .animation {
     max-width: 100%; }
 
@@ -940,10 +962,21 @@ header {
   top: 0;
   left: 0;
   bottom: 0;
-  right: 0; }
+  right: 0;
+  z-index: 1; }
 
 .list-item.leapingtiger:hover::before {
   opacity: 0.0; }
+
+.list-item.leapingtiger img {
+  position: absolute;
+  width: 90%;
+  bottom: 0;
+  z-index: 0; }
+  @media (max-width: 399px) {
+    .list-item.leapingtiger img {
+      width: 70%;
+      bottom: -80px; } }
 
 .list-item.nightwavepanic {
   background-color: #01041E;
@@ -1028,13 +1061,17 @@ header {
             animation-timing-function: cubic-bezier(0.09, 1.21, 0.69, 1.61); } }
 
 .list-item.savethedate {
-  background-color: #CABC95;
+  background-color: #333;
   transition: background-color 0.3s; }
   .list-item.savethedate .animation {
     max-width: 100%; }
+  .list-item.savethedate .card-element {
+    object-fit: cover;
+    position: absolute;
+    height: 100%; }
 
 .list-item.savethedate:hover {
-  background-color: #DACCA5;
+  background-color: #383838;
   transition: background-color 0.3s; }
 
 .list-item.cssmeetup {
@@ -1063,13 +1100,26 @@ header {
 
 .list-item.illustration {
   background-color: #041021;
+  /* background-image: url("/projects/illustration/card x2.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 40%; */
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   transition: background-color 0.3s; }
   .list-item.illustration .animation {
     max-width: 100%; }
 
 .list-item.illustration:hover {
-  background-color: #BB65FF;
+  background-color: #0d1f38;
   transition: background-color 0.3s; }
+
+.list-item.illustration .card-element {
+  width: 40%; }
 
 .format--project header {
   margin-bottom: 0px; }
